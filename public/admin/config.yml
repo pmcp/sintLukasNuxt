@@ -1,4 +1,3 @@
-
 i18n:
   structure: multiple_files
   locales: [nl, fr]
@@ -9,8 +8,8 @@ backend:
   repo: pmcp/sintLukasNuxt
   squash_merges: true
 
-media_folder: static/img
-public_folder: /img
+media_folder: public/assets/uploads
+public_folder: /assets/uploads
 
 publish_mode: editorial_workflow
 
@@ -111,22 +110,21 @@ collections:
             #            summary: '{{fields.header}}'
             fields:
               - { label: text, name: markdown, widget: markdown }
-          - label: 'Logos'
-            name: 'logos'
+          - label: 'Images'
+            name: 'images'
             widget: object
             fields:
+              - label: "Layout"
+                name: "layout"
+                widget: "select"
+                options:
+                  - { label: "Masonry", value: 1 }
+                  - { label: "Frame", value: 2 }
+                  - { label: "Justified", value: 3 }
               - widget: list
-                name: 'logo'
+                name: 'image'
                 #                summary: '{{fields.fr}} - {{fields.nl}}'
                 fields:
-                  - label: "Name"
-                    name: "name"
-                    widget: "string"
-                    required: true
-                  - label: "Link"
-                    name: "link"
-                    required: false
-                    widget: "string"
                   - label: "Image"
                     required: true
                     name: "image"

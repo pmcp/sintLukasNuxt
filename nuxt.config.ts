@@ -2,5 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   extends: ['@nuxt/ui-pro'],
-  modules: ['@nuxt/content', "@nuxt/ui"]
+  modules: ['@nuxt/content', '@nuxt/ui', '@nuxt/image'],
+  ui: {
+    primary: 'black',
+    gray: 'cool'
+  },
+  colorMode: {
+    preference: 'light'
+  }
 })

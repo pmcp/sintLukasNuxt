@@ -1,5 +1,6 @@
 <template>
-  INDEX
+  <elements-masonry />
+  <elements-animated-grid />
 </template>
 
 <script setup>
