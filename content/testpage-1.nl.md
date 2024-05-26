@@ -4,7 +4,7 @@ intro: With an intro
 layout: "1"
 elements:
   - type: text
-    markdown: with some text
+    markdown: with some **text**
   - type: images
     image:
       - image: /img/1.jpg
