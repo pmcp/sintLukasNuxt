@@ -10,6 +10,7 @@ elements:
       - image: /img/1.jpg
       - image: /img/2.jpg
       - image: /img/3.jpg
+    layout: 1
 image: /img/expo-open-atelier-2024-website-banner.png
 ---
 here is some text
