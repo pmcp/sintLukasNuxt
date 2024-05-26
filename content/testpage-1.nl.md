@@ -7,9 +7,9 @@ elements:
     markdown: with some **text**
   - type: images
     image:
-      - image: /img/1.jpg
-      - image: /img/2.jpg
-      - image: /img/3.jpg
+      - image: /public/1.jpg
+      - image: /public/2.jpg
+      - image: /public/3.jpg
     layout: 2
 image: /img/expo-open-atelier-2024-website-banner.png
 ---
