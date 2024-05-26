@@ -4,19 +4,16 @@ intro: With an intro
 layout: "1"
 elements:
   - type: text
-    markdown: with some **text**
-  - type: images
-    image:
-      - image: /assets/uploads/1.jpg
-      - image: /assets/uploads/2.jpg
-      - image: /assets/uploads/3.jpg
-      - image: /assets/uploads/4.jpg
-      - image: /assets/uploads/5.jpg
-      - image: /assets/uploads/6.jpg
-      - image: /assets/uploads/7.jpg
-      - image: /assets/uploads/8.jpg
-      - image: /assets/uploads/9.jpg
-    layout: 2
+    markdown: >-
+      De Sint-Lukasacademie is een instelling van het deeltijds kunstonderwijs
+      (DKO). We richten ons op kinderen (6 tot 12 jaar), jongeren (12 tot 18
+      jaar) en volwassenen (18+) die in hun vrije tijd de mogelijkheden van de
+      beeldende kunsten willen verkennen. Wij bieden, geheel naar onze unieke
+      pedagogie, kwalitatief onderwijs op maat in zowel artistieke als
+      kunstbeschouwelijke opleidingen.
+
+
+      De academie deelt de volledig gerenoveerde site met de Sint-Lukas Basisschool en de Sint-Lukas Kunsthumaniora en bevindt zich naast de Hogeschool LUCA School of Arts. De school fungeert als ontmoetingsplaats tussen verschillende leeftijden, culturen, disciplines en artistieke processen binnen de lokale en internationale (kunst)context.
 image: /img/expo-open-atelier-2024-website-banner.png
 ---
 here is some text
