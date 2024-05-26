@@ -1,0 +1,111 @@
+
+i18n:
+  structure: multiple_files
+  locales: [nl, fr]
+
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+  squash_merges: true
+
+media_folder: static/img
+public_folder: /img
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: 'pages'
+    i18n: true
+    label: 'Pages'
+    label_singular: 'Page'
+    folder: 'content/pages'
+    create: true
+    format: 'frontmatter'
+    # editor:
+    #   preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true, i18n: true }
+      - { label: 'Intro', name: 'intro', widget: 'text', i18n: true, required: false }
+      - label: "Page layout"
+        name: "layout"
+        widget: "select"
+        options:
+          - { label: "Two columns", value: "0" }
+          - { label: "One column", value: "1" }
+      #      - { label: 'Content', name: 'body', widget: 'markdown', i18n: true }
+      - label: 'Content'
+        required: false
+        i18n: true
+        name: 'elements'
+        label_singular: 'Element'
+        widget: 'list'
+        types:
+          - label: 'Text'
+            name: 'text'
+            widget: object
+            #            summary: '{{fields.header}}'
+            fields:
+              - { label: text, name: markdown, widget: markdown }
+          - label: 'Logos'
+            name: 'logos'
+            widget: object
+            fields:
+              - widget: list
+                name: 'logo'
+                #                summary: '{{fields.fr}} - {{fields.nl}}'
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                    required: true
+                  - label: "Link"
+                    name: "link"
+                    required: false
+                    widget: "string"
+                  - label: "Image"
+                    required: true
+                    name: "image"
+                    widget: "image"
+                    choose_url: true
+                    media_library:
+                      config:
+                        multiple: false
+          - label: 'Buttons'
+            name: 'buttons'
+            widget: object
+            fields:
+              - widget: list
+                name: 'button'
+                fields:
+                  - label: "label"
+                    name: "label"
+                    widget: "string"
+                    required: true
+                  - label: "Link"
+                    name: "link"
+                    required: false
+                    widget: "string"
+                  - label: "Download"
+                    required: false
+                    name: "download"
+                    widget: "file"
+                    media_library:
+                      config:
+                        multiple: false
+                        max_file_size: 1024000 # in bytes, only for default media library
+          - label: 'Reservation'
+            name: 'reservation'
+            widget: object
+            fields:
+              - widget: "hidden"
+                name: "reservation"
+                default: "reservation"
+      - label: "Featured Image"
+        required: false
+        name: "image"
+        widget: "image"
+        choose_url: true
+        i18n: true
+        media_library:
+          config:
+            multiple: false
