@@ -7,3 +7,4 @@ elements:
     markdown: with some text
 image: /img/expo-open-atelier-2024-website-banner.png
 ---
+here is some text

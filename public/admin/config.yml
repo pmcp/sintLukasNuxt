@@ -6,6 +6,7 @@ i18n:
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
+  repo: pmcp/sintLukasNuxt
   squash_merges: true
 
 media_folder: static/img
@@ -14,11 +15,75 @@ public_folder: /img
 publish_mode: editorial_workflow
 
 collections:
+  - label: 'Settings'
+    name: 'site'
+    files:
+      - label: 'Info'
+        name: 'info'
+        file: 'content/site/info.json'
+        format: 'json'
+        editor:
+          preview: false
+        fields:
+          - { label: Site Name, name: sitename, widget: string, hint: 'This is used for the site title' }
+          - {
+            label: Site Description,
+            name: sitedescription,
+            widget: string,
+            hint: 'This is used as descriptive text for links that link to this site',
+          }
+          - {
+            label: Site Language,
+            name: sitelang,
+            widget: string,
+            pattern: [ '^[a-z]{2}([-])?([A-Za-z]{2})?$', 'Must match "xx" or "xx-XX" syntax (ex. "en" or "sv-SE")' ],
+          }
+      - label: 'Translations'
+        name: 'translations'
+        file: 'content/site/translations.json'
+        format: 'json'
+        editor:
+          preview: false
+        fields:
+          - label: "Translations"
+            name: "translations"
+            widget: "list"
+            summary: '{{fields.fr}} - {{fields.nl}}'
+            fields:
+              - { label: FR, name: fr, widget: string }
+              - { label: NL, name: nl, widget: string }
+      - label: 'Navigation'
+        name: 'navigation'
+        file: 'content/site/navigation.json'
+        format: 'json'
+        i18n: true
+        editor:
+          preview: false
+        fields:
+          - label: 'Navigation item'
+            name: 'navigation'
+            widget: 'list'
+            summary: '{{fields.page}}'
+            collapsed: false
+            fields:
+              - label: "Label Fr"
+                name: "labelfr"
+                widget: "string"
+              - label: "Label Nl"
+                name: "labelnl"
+                widget: "string"
+              - label: "Page"
+                name: "page"
+                widget: "relation"
+                collection: "pages"
+                search_fields: [ "{{title}}" ]
+                value_field: "{{slug}}"
+                display_fields: [ "{{title}}" ]
   - name: 'pages'
     i18n: true
     label: 'Pages'
     label_singular: 'Page'
-    folder: 'content/pages'
+    folder: 'content'
     create: true
     format: 'frontmatter'
     # editor:
