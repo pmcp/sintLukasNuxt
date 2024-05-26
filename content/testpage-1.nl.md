@@ -17,6 +17,6 @@ elements:
   - type: locations
     location:
       - map-name-asdf-location-type-point-coordinates-78-046875-27-8390761
-image: /img/expo-open-atelier-2024-website-banner.png
+image: ""
 ---
 here is some text
