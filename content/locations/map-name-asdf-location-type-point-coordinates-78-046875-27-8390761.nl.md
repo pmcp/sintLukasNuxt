@@ -25,5 +25,5 @@ info: >-
 street: Groenstraat 156
 zip: "1030"
 city: "Brussel (Schaarbeek) "
-location: '{"type":"Point","coordinates":[-78.0468923,27.8390965]}'
+location: '{"type":"Point","coordinates":[4.365824,50.8609109]}'
 ---
