@@ -14,6 +14,9 @@ elements:
 
 
       De academie deelt de volledig gerenoveerde site met de Sint-Lukas Basisschool en de Sint-Lukas Kunsthumaniora en bevindt zich naast de Hogeschool LUCA School of Arts. De school fungeert als ontmoetingsplaats tussen verschillende leeftijden, culturen, disciplines en artistieke processen binnen de lokale en internationale (kunst)context.
+  - type: locations
+    location:
+      - map-name-asdf-location-type-point-coordinates-78-046875-27-8390761
 image: /img/expo-open-atelier-2024-website-banner.png
 ---
 here is some text
