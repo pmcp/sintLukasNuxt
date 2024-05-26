@@ -1,4 +1,7 @@
 {
+  "name": "sintLukasNuxt",
+  "version": "0.0.1",
+  "author": "PMCP <hi@maartenlauwaert.eu>",
   "private": true,
   "type": "module",
   "scripts": {
