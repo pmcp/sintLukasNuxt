@@ -7,7 +7,7 @@ elements:
     markdown: with some **text**
   - type: images
     image:
-      - image: /public/assets/uploads/1.jpg
+      - image: /assets/uploads/1.jpg
       - image: /assets/uploads/2.jpg
       - image: /assets/uploads/3.jpg
     layout: 2
