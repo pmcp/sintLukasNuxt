@@ -8,8 +8,8 @@ elements:
   - type: images
     image:
       - image: /public/assets/uploads/1.jpg
-      - image: /public/2.jpg
-      - image: /public/3.jpg
+      - image: /assets/uploads/2.jpg
+      - image: /assets/uploads/3.jpg
     layout: 2
 image: /img/expo-open-atelier-2024-website-banner.png
 ---
