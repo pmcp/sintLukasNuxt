@@ -110,6 +110,17 @@ collections:
             #            summary: '{{fields.header}}'
             fields:
               - { label: text, name: markdown, widget: markdown }
+          - label: 'Locations'
+            name: 'locations'
+            fields:
+              - label: "Location"
+                multiple: true
+                name: "location"
+                widget: "relation"
+                collection: "locations"
+                search_fields: [ "{{name}}" ]
+                value_field: "{{slug}}"
+                display_fields: [ "{{name}}" ]
           - label: 'Images'
             name: 'images'
             widget: object
@@ -172,3 +183,17 @@ collections:
         media_library:
           config:
             multiple: false
+  - name: 'locations'
+    i18n: true
+    label: 'Locations'
+    label_singular: 'Location'
+    folder: 'content/locations'
+    create: true
+    format: 'frontmatter'
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string', required: true, i18n: true }
+      - { label: 'Info', name: 'info', widget: 'markdown', i18n: true, required: false }
+      - { label: 'Street & number', name: 'street', widget: 'string', i18n: true, required: false }
+      - { label: 'Zip code', name: 'zip', widget: 'string', i18n: true, required: false }
+      - { label: 'City', name: 'city', widget: 'string', i18n: true, required: false }
+      - {label: "Location", name: "location", widget: "map" }

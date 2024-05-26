@@ -5,52 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="added masonry">
-      <change afterPath="$PROJECT_DIR$/components/elements/animatedGrid.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/elements/container.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/elements/images.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/elements/markdown.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/elements/masonry.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/main/header.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/10_yellowpoints.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/8.snake.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/circle2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/gif_yellow_noraster-copy.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/gif_yellow_noraster.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/goldengrid.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/grow.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/header2021.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/knip.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/marble.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/rol.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/rood.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/rood.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/site_beelden.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/site_beelden3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/site_beelden4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/site_openatelier_gif.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/web-20-21_blauw.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/web-20-21_geel-blok.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/web-20-21_grijs.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/web-20-21_groen.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/web-20-21_rood.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/web-20-21_sint-lukas-1624451630.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/web-20-21_sint-lukas.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/animatedGrid/web-20-21_tekstje.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/uploads/expo-open-atelier-2024-website-banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/[...slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/[...slug].vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/testpage-1.nl.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/testpage-1.nl.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/expo-open-atelier-2024-website-banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/animatedGrid/expo-open-atelier-2024-website-banner.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716722930184</updated>
       <workItem from="1716722931254" duration="1548000" />
-      <workItem from="1716724523982" duration="13332000" />
+      <workItem from="1716724523982" duration="15839000" />
     </task>
     <task id="LOCAL-00001" summary="added name and author to packages.json">
       <created>1716724952483</created>
@@ -122,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716728051264</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added masonry">
+      <created>1716740331671</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716740331671</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
