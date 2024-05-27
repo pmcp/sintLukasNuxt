@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="added locations">
+    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="added mapbox">
+      <change afterPath="$PROJECT_DIR$/app.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/elements/location.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/elements/locations.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/testpage-1.nl.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/testpage-1.nl.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/elements/container.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/container.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/elements/masonry.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/masonry.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716722930184</updated>
       <workItem from="1716722931254" duration="1548000" />
-      <workItem from="1716724523982" duration="15960000" />
+      <workItem from="1716724523982" duration="20938000" />
     </task>
     <task id="LOCAL-00001" summary="added name and author to packages.json">
       <created>1716724952483</created>
@@ -92,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716742637794</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added locations">
+      <created>1716742687032</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716742687032</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +119,7 @@
     <MESSAGE value="added grid and nav" />
     <MESSAGE value="added masonry" />
     <MESSAGE value="added locations" />
-    <option name="LAST_COMMIT_MESSAGE" value="added locations" />
+    <MESSAGE value="added mapbox" />
+    <option name="LAST_COMMIT_MESSAGE" value="added mapbox" />
   </component>
 </project>

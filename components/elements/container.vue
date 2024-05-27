@@ -4,9 +4,10 @@
   <div v-for="(element, key) in elements" :key="`el${key}`">
     <!--  MARKDOWN -->
     <elements-markdown v-if="element.type === 'text'" class="prose lg:prose-md" :markdownString="element.markdown" />
-
-    <!--  MARKDOWN -->
+    <!--  IMAGES -->
     <elements-images v-if="element.type === 'images'" :images="element.image" :layout="element.layout" />
+    <!-- LOCATION-->
+    <elements-locations v-if="element.type === 'locations'" :locations="element.location" />
 
 
 <!--    <logos v-if="element.type === 'logos'" :logos="element.logo"/>-->
