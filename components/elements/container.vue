@@ -4,7 +4,7 @@
   <UPageGrid :ui="{wrapper: 'grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8'}">
 
 
-    <UBlogList orientation="vertical" class="col-span-1 background-grid">
+    <UBlogList orientation="vertical" class="col-span-1">
       <UBlogPost
           v-for="i in  3"
           :ui="{image: { wrapper: 'ring-0 rounded-none'}}"
@@ -15,7 +15,12 @@
       />
     </UBlogList>
 
-    <div class="w-80 h-80 background-grid">
+
+
+    <elements-accordeon :items="[{ label: 'Over de opleiding', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' }, { label: 'Uurrooster', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' }, { label: 'Materiaal', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' }, { label: 'Studietraject', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' }]" />
+
+
+    <div class="w-80 h-80 background-grid col-span-3">
       test
     </div>
 

@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="added grid background">
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="changed main font to Inter">
+      <change afterPath="$PROJECT_DIR$/components/elements/accordeon.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/elements/container.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/container.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716722930184</updated>
       <workItem from="1716722931254" duration="1548000" />
-      <workItem from="1716724523982" duration="27768000" />
+      <workItem from="1716724523982" duration="29823000" />
     </task>
     <task id="LOCAL-00001" summary="added name and author to packages.json">
       <created>1716724952483</created>
@@ -154,7 +156,21 @@
       <option name="project" value="LOCAL" />
       <updated>1716802379009</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="safelist color #1">
+      <created>1716802565314</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1716802565314</updated>
+    </task>
+    <task id="LOCAL-00016" summary="changed main font to Inter">
+      <created>1716803084494</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1716803084494</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +191,8 @@
     <MESSAGE value="designed a bit more" />
     <MESSAGE value="added cards" />
     <MESSAGE value="added grid background" />
-    <option name="LAST_COMMIT_MESSAGE" value="added grid background" />
+    <MESSAGE value="safelist color #1" />
+    <MESSAGE value="changed main font to Inter" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed main font to Inter" />
   </component>
 </project>
