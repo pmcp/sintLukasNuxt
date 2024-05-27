@@ -11,5 +11,6 @@ export default defineNuxtConfig({
   },
   mapbox: {
     accessToken: 'pk.eyJ1IjoicG1jcCIsImEiOiJjbHduc3hkMGExdzNwMmpteWh2M3c3cHZ3In0.4edOOiqp_E93TDvm-1BxCQ'
-  }
+  },
+  css: ['~/assets/css/main.css']
 })
