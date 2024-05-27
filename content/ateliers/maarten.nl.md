@@ -9,5 +9,9 @@ info: "Je maakt op een ludieke manier kennis met verschillende technieken:
 image:
   - image: /assets/uploads/1.jpg
     description: explanation
-elements: []
+elements:
+  - type: teachers
+    teacher:
+      - map-firstname-dsfa-lastname-sadf
+    title: Leerkrachten
 ---
