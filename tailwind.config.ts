@@ -4,6 +4,10 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 export default <Partial<Config>>{
     theme: {
         extend: {
+            fontFamily: {
+                sans: [
+                    '"Inter var", sans-serif'],
+            },
             colors: {
                 'black': {
                     '50': '#000000',
