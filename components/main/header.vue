@@ -1,6 +1,6 @@
 <template>
 
-  <UHeader :ui="{ wrapper: 'border-none py-8 sticky -top-8', container: 'justify-start', container: 'items-end', left: 'lg:flex-none mr-4' }">
+  <UHeader :ui="{ wrapper: 'border-none py-8 sticky -top-8', container: 'items-end', left: 'lg:flex-none mr-4' }">
     <template #logo>
       <svg-logo />
     </template>
@@ -26,6 +26,7 @@
     </template>
 
     <template #panel>
+
       <UVerticalNavigation :links="data.navigation">
         <template #default="{ link }">
           <ULink

@@ -8,7 +8,7 @@ backend:
   repo: pmcp/sintLukasNuxt
   squash_merges: true
 
-media_folder: public/assets/uploads
+media_folder: /public/assets/uploads
 public_folder: /assets/uploads
 
 publish_mode: editorial_workflow
@@ -107,12 +107,13 @@ collections:
           - label: 'Text'
             name: 'text'
             widget: object
-            #            summary: '{{fields.header}}'
             fields:
+              - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
               - { label: text, name: markdown, widget: markdown }
           - label: 'Locations'
             name: 'locations'
             fields:
+              - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
               - label: "Location"
                 multiple: true
                 name: "location"
@@ -125,6 +126,7 @@ collections:
             name: 'images'
             widget: object
             fields:
+              - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
               - label: "Layout"
                 name: "layout"
                 widget: "select"
@@ -134,8 +136,12 @@ collections:
                   - { label: "Justified", value: 3 }
               - widget: list
                 name: 'image'
-                #                summary: '{{fields.fr}} - {{fields.nl}}'
                 fields:
+                  - label: "Description"
+                    name: "description"
+                    widget: "string"
+                    required: true
+                    i18n: true
                   - label: "Image"
                     required: true
                     name: "image"
@@ -148,6 +154,131 @@ collections:
             name: 'buttons'
             widget: object
             fields:
+              - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
+              - widget: list
+                name: 'button'
+                fields:
+                  - label: "label"
+                    name: "label"
+                    widget: "string"
+                    required: true
+                  - label: "Link"
+                    name: "link"
+                    required: false
+                    widget: "string"
+                  - label: "Download"
+                    required: false
+                    name: "download"
+                    widget: "file"
+                    media_library:
+                      config:
+                        multiple: false
+                        max_file_size: 1024000 # in bytes, only for default media library
+      - label: "Featured Image"
+        required: false
+        name: "image"
+        widget: "image"
+        choose_url: true
+        i18n: true
+        media_library:
+          config:
+            multiple: false
+  - name: 'locations'
+    i18n: true
+    label: 'Locations'
+    label_singular: 'Location'
+    folder: 'content/locations'
+    create: true
+    format: 'frontmatter'
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string', required: true, i18n: true }
+      - { label: 'Info', name: 'info', widget: 'markdown', i18n: true, required: false }
+      - { label: 'Street & number', name: 'street', widget: 'string', i18n: true, required: false }
+      - { label: 'Zip code', name: 'zip', widget: 'string', i18n: true, required: false }
+      - { label: 'City', name: 'city', widget: 'string', i18n: true, required: false }
+      - {label: "Location", name: "location", widget: "map" }
+  - name: 'ateliers'
+    i18n: true
+    label: 'Ateliers'
+    label_singular: 'Atelier'
+    folder: 'content/ateliers'
+    create: true
+    format: 'frontmatter'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true, i18n: true }
+      - { label: 'Age', name: 'age', widget: 'string', required: true, i18n: true }
+      - { label: 'Intro', name: 'intro', widget: 'markdown', i18n: true, required: false }
+      - label: 'Content'
+        required: false
+        i18n: true
+        name: 'elements'
+        label_singular: 'Element'
+        widget: 'list'
+        types:
+          - label: 'Text'
+            name: 'text'
+            widget: object
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
+              - { label: text, name: markdown, widget: markdown }
+          - label: 'Locations'
+            name: 'locations'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
+              - label: "Location"
+                multiple: true
+                name: "location"
+                widget: "relation"
+                collection: "locations"
+                search_fields: [ "{{name}}" ]
+                value_field: "{{slug}}"
+                display_fields: [ "{{name}}" ]
+          - label: 'Teachers'
+            name: 'teachers'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
+              - label: "Teacher"
+                multiple: true
+                name: "teacher"
+                widget: "relation"
+                collection: "teachers"
+                search_fields: [ "{{name}}" ]
+                value_field: "{{slug}}"
+                display_fields: [ "{{name}}" ]
+          - label: 'Images'
+            name: 'images'
+            widget: object
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
+              - label: "Layout"
+                name: "layout"
+                widget: "select"
+                options:
+                  - { label: "Masonry", value: 1 }
+                  - { label: "Frame", value: 2 }
+                  - { label: "Justified", value: 3 }
+              - widget: list
+                name: 'image'
+                #                summary: '{{fields.fr}} - {{fields.nl}}'
+                fields:
+                  - label: "Description"
+                    name: "description"
+                    widget: "string"
+                    required: true
+                    i18n: true
+                  - label: "Image"
+                    required: true
+                    name: "image"
+                    widget: "image"
+                    choose_url: true
+                    media_library:
+                      config:
+                        multiple: false
+          - label: 'Buttons'
+            name: 'buttons'
+            widget: object
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
               - widget: list
                 name: 'button'
                 fields:
@@ -174,7 +305,19 @@ collections:
               - widget: "hidden"
                 name: "reservation"
                 default: "reservation"
-      - label: "Featured Image"
+  - name: 'teachers'
+    i18n: true
+    label: 'Teachers'
+    label_singular: 'Teacher'
+    folder: 'content/teachers'
+    create: true
+    format: 'frontmatter'
+    fields:
+      - { label: 'First Name', name: 'firstName', widget: 'string', required: true, i18n: false }
+      - { label: 'Last Name', name: 'lastName', widget: 'string', required: true, i18n: false }
+      - { label: 'Info', name: 'info', widget: 'markdown', i18n: true, required: false }
+      - { label: 'Video', name: 'video', widget: 'string', i18n: true, required: false }
+      - label: "Photo"
         required: false
         name: "image"
         widget: "image"
@@ -183,17 +326,3 @@ collections:
         media_library:
           config:
             multiple: false
-  - name: 'locations'
-    i18n: true
-    label: 'Locations'
-    label_singular: 'Location'
-    folder: 'content/locations'
-    create: true
-    format: 'frontmatter'
-    fields:
-      - { label: 'Name', name: 'name', widget: 'string', required: true, i18n: true }
-      - { label: 'Info', name: 'info', widget: 'markdown', i18n: true, required: false }
-      - { label: 'Street & number', name: 'street', widget: 'string', i18n: true, required: false }
-      - { label: 'Zip code', name: 'zip', widget: 'string', i18n: true, required: false }
-      - { label: 'City', name: 'city', widget: 'string', i18n: true, required: false }
-      - {label: "Location", name: "location", widget: "map" }

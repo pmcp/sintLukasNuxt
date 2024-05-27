@@ -1,7 +1,11 @@
 <template>
   <div>
     <main-header />
-    <slot />
+    <UPage>
+      <UPageBody >
+        <slot />
+      </UPageBody>
+    </UPage>
     <main-footer />
   </div>
 </template>
