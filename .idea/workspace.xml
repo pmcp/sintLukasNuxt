@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="added mapbox">
-      <change afterPath="$PROJECT_DIR$/app.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/elements/location.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/elements/locations.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/elements/container.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/container.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/elements/masonry.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/masonry.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="fixing import #1">
+      <change beforePath="$PROJECT_DIR$/app.config.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716722930184</updated>
       <workItem from="1716722931254" duration="1548000" />
-      <workItem from="1716724523982" duration="20938000" />
+      <workItem from="1716724523982" duration="21260000" />
     </task>
     <task id="LOCAL-00001" summary="added name and author to packages.json">
       <created>1716724952483</created>
@@ -106,7 +98,21 @@
       <option name="project" value="LOCAL" />
       <updated>1716742687032</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added mapbox">
+      <created>1716795711362</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716795711362</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixing import #1">
+      <created>1716795731995</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716795731995</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +126,7 @@
     <MESSAGE value="added masonry" />
     <MESSAGE value="added locations" />
     <MESSAGE value="added mapbox" />
-    <option name="LAST_COMMIT_MESSAGE" value="added mapbox" />
+    <MESSAGE value="fixing import #1" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing import #1" />
   </component>
 </project>
