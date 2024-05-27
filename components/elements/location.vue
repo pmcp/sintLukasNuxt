@@ -28,7 +28,6 @@
 
     <template #footer>
       <elements-markdown class="prose lg:prose-md" :markdownString="location.info" />
-
     </template>
   </UCard>
 

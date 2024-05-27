@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="changed main font to Inter">
-      <change afterPath="$PROJECT_DIR$/components/elements/accordeon.vue" afterDir="false" />
+    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="added accordeon">
+      <change afterPath="$PROJECT_DIR$/components/elements/newsletter.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/main/footer.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/elements/accordeon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/accordeon.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/elements/container.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/container.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/elements/location.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/location.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716722930184</updated>
       <workItem from="1716722931254" duration="1548000" />
-      <workItem from="1716724523982" duration="29823000" />
+      <workItem from="1716724523982" duration="34484000" />
     </task>
     <task id="LOCAL-00001" summary="added name and author to packages.json">
       <created>1716724952483</created>
@@ -170,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716803084494</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added accordeon">
+      <created>1716804630113</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1716804630113</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +204,7 @@
     <MESSAGE value="added grid background" />
     <MESSAGE value="safelist color #1" />
     <MESSAGE value="changed main font to Inter" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed main font to Inter" />
+    <MESSAGE value="added accordeon" />
+    <option name="LAST_COMMIT_MESSAGE" value="added accordeon" />
   </component>
 </project>
