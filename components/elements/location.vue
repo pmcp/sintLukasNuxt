@@ -1,7 +1,7 @@
 <template>
 
 
-  <UCard :ui="{ body: {padding: 'px-0 py-0 p-0 sm:p-0'} }">
+  <UCard :ui="{ body: {padding: 'px-0 py-0 p-0 sm:p-0'}, rounded: 'rounded-none' }">
     <template #header>
       <div>{{ location.name }}</div>
       <div>{{ location.street }}</div>

@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="fixing import #1">
-      <change beforePath="$PROJECT_DIR$/app.config.ts" beforeDir="false" />
+    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="removed clientOnly, see if still works?">
+      <change afterPath="$PROJECT_DIR$/app.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/svg/logo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/button.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/elements/container.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/container.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/elements/location.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/location.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/main/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716722930184</updated>
       <workItem from="1716722931254" duration="1548000" />
-      <workItem from="1716724523982" duration="21260000" />
+      <workItem from="1716724523982" duration="25607000" />
     </task>
     <task id="LOCAL-00001" summary="added name and author to packages.json">
       <created>1716724952483</created>
@@ -112,7 +120,28 @@
       <option name="project" value="LOCAL" />
       <updated>1716795731995</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="didn't need app config">
+      <created>1716796049899</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716796049899</updated>
+    </task>
+    <task id="LOCAL-00010" summary="es module fix #2">
+      <created>1716796361621</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716796361621</updated>
+    </task>
+    <task id="LOCAL-00011" summary="removed clientOnly, see if still works?">
+      <created>1716797199446</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716797199446</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +156,9 @@
     <MESSAGE value="added locations" />
     <MESSAGE value="added mapbox" />
     <MESSAGE value="fixing import #1" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing import #1" />
+    <MESSAGE value="didn't need app config" />
+    <MESSAGE value="es module fix #2" />
+    <MESSAGE value="removed clientOnly, see if still works?" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed clientOnly, see if still works?" />
   </component>
 </project>
