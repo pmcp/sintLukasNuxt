@@ -13,5 +13,6 @@ elements:
   - type: teachers
     teacher:
       - map-firstname-dsfa-lastname-sadf
+      - map-firstname-laure-lastname-dhoe
     title: Leerkrachten
 ---
