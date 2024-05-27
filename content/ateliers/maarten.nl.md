@@ -1,9 +1,11 @@
 ---
-title: Maarten
-age: Lauwaert
-info: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-  veritatis et quasi **architecto** beatae vitae dicta sunt explicabo.
+title: Atelier kinderen
+age: 6-12 jaar
+info: "Je maakt op een ludieke manier kennis met verschillende technieken:
+  schilderen, tekenen, collages maken, sculpturen kneden in klei, fotograferen,
+  etsen, ... Laat je verwonderen door de rijke wereld van materialen, technieken
+  en kunststromingen. Je wordt geprikkeld om te doen, te experimenteren en
+  prikkels al spelend om te zetten in sprekende beelden!"
 image:
   - image: /assets/uploads/1.jpg
     description: explanation
