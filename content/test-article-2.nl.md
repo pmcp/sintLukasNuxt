@@ -21,11 +21,6 @@ elements:
       - map-firstname-laure-lastname-dhoe
       - map-firstname-dsfa-lastname-sadf
     width: 1
-  - type: locations
-    width: 1
-    title: Locations
-    location:
-      - map-name-asdf-location-type-point-coordinates-78-046875-27-8390761
   - type: images
     width: 2
     title: Image
@@ -33,4 +28,9 @@ elements:
     image:
       - image: /assets/uploads/1.jpg
         description: Image
+  - type: locations
+    width: 1
+    title: Locations
+    location:
+      - map-name-asdf-location-type-point-coordinates-78-046875-27-8390761
 ---
