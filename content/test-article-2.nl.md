@@ -24,7 +24,7 @@ elements:
   - type: images
     width: 2
     title: Image
-    layout: 1
+    layout: 4
     image:
       - image: /assets/uploads/1.jpg
         description: Image
