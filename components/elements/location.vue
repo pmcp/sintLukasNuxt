@@ -1,14 +1,27 @@
 <template>
-
-
-  <UCard :ui="{ body: {padding: 'px-0 py-0 p-0 sm:p-0'}, rounded: 'rounded-none' }">
+  <UCard :ui="{ body: { padding: 'px-0 py-0 p-0 sm:p-0'}, rounded: 'rounded-none', header: {base: 'dropdown-label'}, footer: {base: 'dropdown-content'}}" ref="dropdown" class="dropdown ">
     <template #header>
-      <div>{{ location.name }}</div>
-      <div>{{ location.street }}</div>
-      <div>{{ location.zip }} {{ location.city }}</div>
+      <div class="flex flex-row justify-between items-end">
+        <div>
+          <div>{{ location.name }}</div>
+          <div>{{ location.street }}</div>
+          <div>{{ location.zip }} {{ location.city }}</div>
+        </div>
+        <UButton
+            icon="i-heroicons-chevron-down"
+            size="sm"
+            color="black"
+            square
+            variant="ghost"
+            @click="show = !show"
+            @mouseover="hover = true"
+            @mouseout="hover = false"
+            class="hover:bg-primary-300 pmcp-buttonEffect"
+        />
+      </div>
     </template>
 
-    <div class="relative h-64">
+    <div class="relative h-64 dropdown-content" v-if="show">
       <MapboxMap
           map-id="location"
           :options="{
@@ -25,9 +38,12 @@
         </MapboxDefaultMarker>
       </MapboxMap>
     </div>
+    <div v-else class="pmcp-buttonEffect-receiver w-full pt-1 bg-primary-200" :class="{'bg-primary-300': hover}">
 
-    <template #footer>
-      <elements-markdown class="prose lg:prose-md" :markdownString="location.info" />
+    </div>
+
+    <template #footer v-if="show">
+      <elements-markdown class="prose lg:prose-md" v-if="show" :markdownString="location.info" />
     </template>
   </UCard>
 
@@ -41,4 +57,13 @@ const props = defineProps({
     required: true,
   }
 });
+
+
+const dropdown = ref() // we need a DOM node
+const show = ref(false)
+const hover = ref(false)
+// onMounted(() => {
+//   autoAnimate(dropdown.value)
+// })
+
 </script>

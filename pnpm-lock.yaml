@@ -8,6 +8,9 @@ dependencies:
   '@egjs/vue-grid':
     specifier: ^1.15.0
     version: 1.15.0(vue@3.4.27)
+  '@formkit/auto-animate':
+    specifier: ^0.8.2
+    version: 0.8.2
   '@nuxt/content':
     specifier: ^2.12.1
     version: 2.12.1(nuxt@3.11.2)(vue@3.4.27)
@@ -673,6 +676,10 @@ packages:
 
   /@floating-ui/utils@0.2.2:
     resolution: {integrity: sha512-J4yDIIthosAsRZ5CPYP/jQvUAQtlZTTD/4suA08/FEnlxqW3sKS9iAhgsa9VYLZ6vDHn/ixJgIqRQPotoBjxIw==}
+
+  /@formkit/auto-animate@0.8.2:
+    resolution: {integrity: sha512-SwPWfeRa5veb1hOIBMdzI+73te5puUBHmqqaF1Bu7FjvxlYSz/kJcZKSa9Cg60zL0uRNeJL2SbRxV6Jp6Q1nFQ==}
+    dev: false
 
   /@headlessui/tailwindcss@0.2.0(tailwindcss@3.4.3):
     resolution: {integrity: sha512-fpL830Fln1SykOCboExsWr3JIVeQKieLJ3XytLe/tt1A0XzqUthOftDmjcCYLW62w7mQI7wXcoPXr3tZ9QfGxw==}

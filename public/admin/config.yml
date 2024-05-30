@@ -101,7 +101,7 @@ collections:
           - label: 'Text'
             name: 'text'
             widget: object
-            summary: "{{fields.text}}"
+            summary: "{{fields.title}} - Width: {{fields.width}}/2"
             fields:
               - { label: "Title", name: "title", widget: "string", required: false, i18n: true }
               - { label: text, name: markdown, widget: markdown }
@@ -110,12 +110,12 @@ collections:
                 widget: "select"
                 default: 3
                 options:
-                  - { label: "1/3", value: 1 }
-                  - { label: "2/3", value: 2 }
-                  - { label: "Full", value: 3 }
+                  - { label: "1/2", value: 1 }
+                  - { label: "Full", value: 2 }
+              - {label: "Squares", name: "squares", widget: "boolean", default: false, required: false}
           - label: 'Locations'
             name: 'locations'
-            summary: "{{fields.title}}"
+            summary: "{{fields.title}} - Width: {{fields.width}}/2"
             fields:
               - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
               - label: "Location"
@@ -126,9 +126,17 @@ collections:
                 search_fields: [ "{{name}}" ]
                 value_field: "{{slug}}"
                 display_fields: [ "{{name}}" ]
+              - label: "Width"
+                name: "width"
+                widget: "select"
+                default: 3
+                options:
+                  - { label: "1/2", value: 1 }
+                  - { label: "Full", value: 2 }
+              - {label: "Squares", name: "squares", widget: "boolean", default: false, required: false}
           - label: 'Teachers'
             name: 'teachers'
-            summary: "{{fields.title}}"
+            summary: "{{fields.title}} - Width: {{fields.width}}/2"
             fields:
               - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
               - label: "Teacher"
@@ -139,9 +147,17 @@ collections:
                 search_fields: [ "{{firstName}}", "{{lastName}}" ]
                 value_field: "{{slug}}"
                 display_fields: [ "{{firstName}} {{lastName}}" ]
+              - label: "Width"
+                name: "width"
+                widget: "select"
+                default: 3
+                options:
+                  - { label: "1/2", value: 1 }
+                  - { label: "Full", value: 2 }
+              - {label: "Squares", name: "squares", widget: "boolean", default: false, required: false}
           - label: 'Images'
             name: 'images'
-            summary: "{{fields.title}}"
+            summary: "{{fields.title}} - Width: {{fields.width}}/2"
             widget: object
             fields:
               - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
@@ -152,6 +168,7 @@ collections:
                   - { label: "Masonry", value: 1 }
                   - { label: "Frame", value: 2 }
                   - { label: "Justified", value: 3 }
+                  - { label: "Full Width", value: 4 }
               - widget: list
                 name: 'image'
                 fields:
@@ -168,10 +185,18 @@ collections:
                     media_library:
                       config:
                         multiple: false
+              - label: "Width"
+                name: "width"
+                widget: "select"
+                default: 3
+                options:
+                  - { label: "1/2", value: 1 }
+                  - { label: "Full", value: 2 }
+              - {label: "Squares", name: "squares", widget: "boolean", default: false, required: false}
           - label: 'Buttons'
             name: 'buttons'
             widget: object
-            summary: "{{fields.title}}"
+            summary: "{{fields.title}} - Width: {{fields.width}}/2"
             fields:
               - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
               - widget: list
@@ -193,6 +218,14 @@ collections:
                       config:
                         multiple: false
                         max_file_size: 1024000 # in bytes, only for default media library
+              - label: "Width"
+                name: "width"
+                widget: "select"
+                default: 3
+                options:
+                  - { label: "1/2", value: 1 }
+                  - { label: "Full", value: 2 }
+              - {label: "Squares", name: "squares", widget: "boolean", default: false, required: false}
       - label: "Featured Image"
         required: false
         name: "image"

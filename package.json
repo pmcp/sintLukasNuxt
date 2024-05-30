@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@egjs/vue-grid": "^1.15.0",
+    "@formkit/auto-animate": "^0.8.2",
     "@nuxt/content": "^2.12.1",
     "@nuxt/image": "^1.7.0",
     "@nuxt/ui": "^2.16.0",

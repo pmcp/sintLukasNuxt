@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UPageGrid :ui="{wrapper: 'grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8'}">
+    <UPageGrid :ui="{wrapper: 'grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-8'}">
 <!--      <UBlogList orientation="vertical" class="col-span-2">-->
 <!--        <UBlogPost-->
 <!--            v-for="i in  3"-->
@@ -20,7 +20,7 @@
 
 
 
-      <div v-for="(element, key) in elements" :key="`el${key}`" :class="`pmcp-container col-span-${element.width}`">
+      <div v-for="(element, key) in elements" :key="`el${key}`" class="pmcp-container" :class="getContainerClasses(element)">
         <!--  MARKDOWN -->
         <elements-markdown v-if="element.type === 'text'" class="prose lg:prose-md" :markdownString="element.markdown" />
         <!--  IMAGES -->
@@ -35,14 +35,17 @@
 </template>
 
 
-<script>
-export default {
-  props: {
-    elements: {
-      type: Object
-    },
-  },
+<script setup>
+const props = defineProps({
+  elements: Object,
+});
+
+function getContainerClasses(element){
+  let squares = ''
+  if(element.squares) squares = 'background-grid'
+  return `col-span-${element.width || 2} ${squares}`
 }
+
 </script>
 
 <style>
