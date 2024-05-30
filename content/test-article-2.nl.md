@@ -34,4 +34,5 @@ elements:
     title: Locations
     location:
       - map-name-asdf-location-type-point-coordinates-78-046875-27-8390761
+    squares: true
 ---
