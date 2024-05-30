@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="design changes + footer">
-      <change afterPath="$PROJECT_DIR$/components/elements/teachers.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/aanbod/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/ateliers/[...slug].vue" afterDir="false" />
+    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="added moooore">
+      <change afterPath="$PROJECT_DIR$/components/elements/teacher.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/team/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/elements/container.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/container.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/elements/teachers.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/teachers.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/main/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/[...slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/[...slug].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/ateliers/[...slug].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ateliers/[...slug].vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716722930184</updated>
       <workItem from="1716722931254" duration="1548000" />
-      <workItem from="1716724523982" duration="46427000" />
+      <workItem from="1716724523982" duration="54502000" />
     </task>
     <task id="LOCAL-00001" summary="added name and author to packages.json">
       <created>1716724952483</created>
@@ -194,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716812487344</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added moooore">
+      <created>1716829769014</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716829769014</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +224,7 @@
     <MESSAGE value="changed main font to Inter" />
     <MESSAGE value="added accordeon" />
     <MESSAGE value="design changes + footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="design changes + footer" />
+    <MESSAGE value="added moooore" />
+    <option name="LAST_COMMIT_MESSAGE" value="added moooore" />
   </component>
 </project>

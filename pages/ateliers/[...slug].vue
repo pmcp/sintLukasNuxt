@@ -4,7 +4,7 @@
 <!--          <pre> {{ data }} </pre>-->
     <h1>{{ data.title }}</h1>
     <h2>{{ data.age }}</h2>
-    <p> {{ data.info }}</p>
+    <p class="prose lg:prose-md"> {{ data.info }}</p>
 
     <elements-container :elements="data.elements"/>
 

@@ -90,28 +90,32 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true, i18n: true }
       - { label: 'Intro', name: 'intro', widget: 'text', i18n: true, required: false }
-      - label: "Page layout"
-        name: "layout"
-        widget: "select"
-        options:
-          - { label: "Two columns", value: "0" }
-          - { label: "One column", value: "1" }
-      #      - { label: 'Content', name: 'body', widget: 'markdown', i18n: true }
       - label: 'Content'
         required: false
         i18n: true
         name: 'elements'
         label_singular: 'Element'
         widget: 'list'
+        summary: "{{fields.title}}"
         types:
           - label: 'Text'
             name: 'text'
             widget: object
+            summary: "{{fields.text}}"
             fields:
-              - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
+              - { label: "Title", name: "title", widget: "string", required: false, i18n: true }
               - { label: text, name: markdown, widget: markdown }
+              - label: "Width"
+                name: "width"
+                widget: "select"
+                default: 3
+                options:
+                  - { label: "1/3", value: 1 }
+                  - { label: "2/3", value: 2 }
+                  - { label: "Full", value: 3 }
           - label: 'Locations'
             name: 'locations'
+            summary: "{{fields.title}}"
             fields:
               - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
               - label: "Location"
@@ -122,8 +126,22 @@ collections:
                 search_fields: [ "{{name}}" ]
                 value_field: "{{slug}}"
                 display_fields: [ "{{name}}" ]
+          - label: 'Teachers'
+            name: 'teachers'
+            summary: "{{fields.title}}"
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
+              - label: "Teacher"
+                multiple: true
+                name: "teacher"
+                widget: "relation"
+                collection: "teachers"
+                search_fields: [ "{{firstName}}", "{{lastName}}" ]
+                value_field: "{{slug}}"
+                display_fields: [ "{{firstName}} {{lastName}}" ]
           - label: 'Images'
             name: 'images'
+            summary: "{{fields.title}}"
             widget: object
             fields:
               - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
@@ -153,6 +171,7 @@ collections:
           - label: 'Buttons'
             name: 'buttons'
             widget: object
+            summary: "{{fields.title}}"
             fields:
               - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
               - widget: list

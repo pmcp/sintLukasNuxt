@@ -6,10 +6,11 @@
     </template>
 
     <template #center >
-      <div class="hidden lg:flex grow">
+      <div class="hidden lg:flex grow gap-8">
         <ULink
             v-for="link in data.navigation"
             :to="link.page + '.nl'"
+            class="hover:underline underline-offset-8"
             active-class="text-black underline underline-offset-8"
             inactive-class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
         >
@@ -51,5 +52,11 @@ const { data } = await useAsyncData('navigation', () => queryContent('site/navig
 </script>
 
 
+<style scoped>
 
+.cani {
+
+}
+
+</style>
 

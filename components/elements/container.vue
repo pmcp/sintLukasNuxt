@@ -18,7 +18,9 @@
 <!--        test-->
 <!--      </div>-->
 
-      <div v-for="(element, key) in elements" :key="`el${key}`" class="col-span-3">
+
+
+      <div v-for="(element, key) in elements" :key="`el${key}`" :class="`pmcp-container col-span-${element.width}`">
         <!--  MARKDOWN -->
         <elements-markdown v-if="element.type === 'text'" class="prose lg:prose-md" :markdownString="element.markdown" />
         <!--  IMAGES -->
@@ -42,3 +44,13 @@ export default {
   },
 }
 </script>
+
+<style>
+
+
+.pmcp-container {
+  container-type: inline-size;
+
+}
+
+</style>
