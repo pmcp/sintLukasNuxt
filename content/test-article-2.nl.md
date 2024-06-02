@@ -1,5 +1,6 @@
 ---
 title: Test Article 2
+intro: cbcf
 elements:
   - type: text
     title: Some text
