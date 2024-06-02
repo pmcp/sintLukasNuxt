@@ -1,6 +1,6 @@
 <template>
-  <UButton v-if="style === 0" variant="outline" color="black" :ui="{ rounded: 'rounded-none' }"><slot /></UButton>
-  <UButton v-if="style === 1"  color="black" :ui="{ rounded: 'rounded-none' }"><slot /></UButton>
+  <UButton class="hover:bg-primary-700" v-if="style === 0" color="black" variant="outline" :ui="{ rounded: 'rounded-none' }"><slot /></UButton>
+  <UButton v-if="style === 1"  color="black" :ui="{ rounded: 'rounded-none'}"><slot /></UButton>
   <UButton v-if="style === 2"  color="primary" :ui="{ rounded: 'rounded-none' }"><slot /></UButton>
 </template>
 

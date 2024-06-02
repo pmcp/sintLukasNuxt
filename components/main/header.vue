@@ -1,6 +1,6 @@
 <template>
 
-  <UHeader :ui="{ wrapper: 'border-none py-8 sticky -top-8', container: 'items-end', left: 'lg:flex-none mr-4' }">
+  <UHeader :ui="{ wrapper: 'bg-background/100 backdrop-blur-none border-b border-second-300 pt-2 pb-4 sticky -top-0', container: 'items-end', left: 'lg:flex-none mr-4' }">
     <template #logo>
       <svg-logo />
     </template>
@@ -21,7 +21,7 @@
     </template>
 
     <template #right>
-      <ui-button :style="1">
+      <ui-button :style="0">
         Inschrijven
       </ui-button>
     </template>
@@ -50,13 +50,3 @@
 <script setup>
 const { data } = await useAsyncData('navigation', () => queryContent('site/navigation').findOne())
 </script>
-
-
-<style scoped>
-
-.cani {
-
-}
-
-</style>
-

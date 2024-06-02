@@ -1,6 +1,7 @@
 export default defineAppConfig({
     ui: {
-        primary: 'accent',
+        primary: 'main',
+        secondary: 'second',
         gray: 'black'
     }
 })

@@ -1,5 +1,4 @@
 <template>
-  <elements-masonry />
   <elements-animated-grid />
 </template>
 

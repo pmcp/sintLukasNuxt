@@ -16,7 +16,7 @@
             @click="show = !show"
             @mouseover="hover = true"
             @mouseout="hover = false"
-            class="hover:bg-primary-300 pmcp-buttonEffect"
+            class="hover:bg-primary-700 pmcp-buttonEffect"
         />
       </div>
     </template>
@@ -38,7 +38,7 @@
         </MapboxDefaultMarker>
       </MapboxMap>
     </div>
-    <div v-else class="pmcp-buttonEffect-receiver w-full pt-1 bg-primary-200" :class="{'bg-primary-300': hover}">
+    <div v-else class="pmcp-buttonEffect-receiver w-full pt-1 bg-primary-100" :class="{'bg-primary-700': hover}">
 
     </div>
 

@@ -14,6 +14,6 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/main.css'],
   ui: {
-    safelistColors: ['black', 'accent']
+    safelistColors: ['black', 'primary', 'secondary']
   }
 })
