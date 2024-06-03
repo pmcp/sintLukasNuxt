@@ -1,5 +1,5 @@
 ---
-title: Atelier kinderen
+title: Ateliers
 age: 6-12 jaar
 info: "Je maakt op een ludieke manier kennis met verschillende technieken:
   schilderen, tekenen, collages maken, sculpturen kneden in klei, fotograferen,
