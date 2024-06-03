@@ -15,8 +15,6 @@ mainImage: /assets/uploads/4.jpg
 elements:
   - type: text
     markdown: >-
-      
-
       ## 6-11 jaar
 
 
@@ -24,24 +22,9 @@ elements:
 
 
 
-
-
-      <details>
-        <summary>undefined</summary>
-
-        undefined
-
-      </details>
-
-
-
-
-      <details>
-        <summary>undefined</summary>
-
-        undefined
-
-      </details>
+      <button :to="http://localhost:8888/ateliers/maarten.nl" :download="/assets/uploads/1.jpg">
+        asdfsadfasdf
+      </button>
 
 
 
