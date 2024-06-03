@@ -41,4 +41,6 @@ elements:
     category:
       - categories: 90iJn1gwW8MuR2-xvbPDj
       - categories: _CjrAc9jGjz9N8KjUjcYV
+    squares: false
+    width: 1
 ---
