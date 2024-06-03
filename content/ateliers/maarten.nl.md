@@ -9,14 +9,7 @@ info: "Je maakt op een ludieke manier kennis met verschillende technieken:
 image:
   - image: /assets/uploads/1.jpg
     description: explanation
-intro: |-
-  
-  <details>
-    <summary>undefined</summary>
-
-    undefined
-
-  </details>
+intro: ""
 categories: 90iJn1gwW8MuR2-xvbPDj
 mainImage: /assets/uploads/4.jpg
 elements:
