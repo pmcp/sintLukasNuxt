@@ -22,12 +22,17 @@ elements:
 
 
 
-      <button :to="test link" :download="/assets/uploads/4.jpg" :style="null">
-        Test label
+
+
+      <button :to="asdf" :download="undefined" :style="undefined">
+        sadf
       </button>
 
 
 
+      <button :to="test link" :download="/assets/uploads/4.jpg" :style="null">
+        Test label
+      </button>
 
 
       ## Nieuw
