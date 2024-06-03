@@ -24,14 +24,14 @@ elements:
 
 
 
-      <button :to="testlink" :download="undefined" :style="">
-        testlabel
+      <button :to="asdf" :download="undefined" :style="undefined">
+        sadf
       </button>
 
 
 
-      <button :to="http://localhost:8888/ateliers/maarten.nl" :download="/assets/uploads/1.jpg">
-        asdfsadfasdf
+      <button :to="test link" :download="/assets/uploads/4.jpg" :style="null">
+        Test label
       </button>
 
 
