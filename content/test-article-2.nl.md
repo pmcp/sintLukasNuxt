@@ -38,4 +38,7 @@ elements:
     squares: true
   - type: ateliers
     categories: 90iJn1gwW8MuR2-xvbPDj
+    category:
+      - categories: 90iJn1gwW8MuR2-xvbPDj
+      - categories: _CjrAc9jGjz9N8KjUjcYV
 ---
