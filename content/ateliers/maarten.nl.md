@@ -9,7 +9,7 @@ info: "Je maakt op een ludieke manier kennis met verschillende technieken:
 image:
   - image: /assets/uploads/1.jpg
     description: explanation
-categories: _CjrAc9jGjz9N8KjUjcYV
+categories: 90iJn1gwW8MuR2-xvbPDj
 elements:
   - type: teachers
     teacher:
