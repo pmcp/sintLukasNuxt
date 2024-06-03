@@ -10,6 +10,7 @@ image:
   - image: /assets/uploads/1.jpg
     description: explanation
 categories: 90iJn1gwW8MuR2-xvbPDj
+mainImage: /assets/uploads/4.jpg
 elements:
   - type: teachers
     teacher:
