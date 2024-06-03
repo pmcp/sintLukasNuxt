@@ -22,12 +22,17 @@ elements:
 
 
 
-      <button :to="http://localhost:8888/ateliers/maarten.nl" :download="/assets/uploads/1.jpg">
-        asdfsadfasdf
+
+
+      <button :to="testlink" :download="undefined" :style="">
+        testlabel
       </button>
 
 
 
+      <button :to="http://localhost:8888/ateliers/maarten.nl" :download="/assets/uploads/1.jpg">
+        asdfsadfasdf
+      </button>
 
 
       ## Nieuw
