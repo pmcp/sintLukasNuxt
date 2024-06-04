@@ -28,15 +28,10 @@ elements:
 
 
 
-      <button :to="asdf" :download="undefined" :style="undefined">
-        sadf
-      </button>
+      <dispatch :data="{"label":"theLabel","link":"theLink","type":null}" type="button" />
 
 
 
-      <button :to="test link" :download="/assets/uploads/4.jpg" :style="null">
-        Test label
-      </button>
 
 
       ## Nieuw
