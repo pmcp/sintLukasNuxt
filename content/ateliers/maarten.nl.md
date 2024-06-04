@@ -9,11 +9,11 @@ info: "Je maakt op een ludieke manier kennis met verschillende technieken:
 image:
   - image: /assets/uploads/1.jpg
     description: explanation
-intro: |-
+intro: >-
   1
 
 
-  :dispatch{data='{"label":"label","link":"link","type":null}' />
+  :dispatch{:data='{"label":"the label","link":"theLink","type":null} type="button"}
 categories: 90iJn1gwW8MuR2-xvbPDj
 mainImage: /assets/uploads/4.jpg
 elements:
