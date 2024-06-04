@@ -10,7 +10,9 @@ image:
   - image: /assets/uploads/1.jpg
     description: explanation
 intro: |-
-  
+  asdf
+
+
   <dispatch :data="[object Object]" type="button" />
 categories: 90iJn1gwW8MuR2-xvbPDj
 mainImage: /assets/uploads/4.jpg
