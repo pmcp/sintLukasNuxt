@@ -10,10 +10,10 @@ image:
   - image: /assets/uploads/1.jpg
     description: explanation
 intro: |-
-  adsasd
+  1
 
 
-  <dispatch :data="[object Object]" type="button" />
+  <dispatch :data="{"label":"label","link":"link","type":null}" type="button" />
 categories: 90iJn1gwW8MuR2-xvbPDj
 mainImage: /assets/uploads/4.jpg
 elements:
