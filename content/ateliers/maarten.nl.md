@@ -13,7 +13,7 @@ intro: |-
   1
 
 
-  <dispatch :data="{"label":"label","link":"link","type":null}" type="button" />
+  :dispatch{data='{"label":"label","link":"link","type":null}' />
 categories: 90iJn1gwW8MuR2-xvbPDj
 mainImage: /assets/uploads/4.jpg
 elements:
