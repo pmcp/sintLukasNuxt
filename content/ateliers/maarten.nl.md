@@ -10,7 +10,7 @@ image:
   - image: /assets/uploads/1.jpg
     description: explanation
 intro: |-
-  asdf
+  adsasd
 
 
   <dispatch :data="[object Object]" type="button" />
