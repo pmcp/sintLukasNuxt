@@ -26,11 +26,7 @@ elements:
 
 
 
-
-
-      <dispatch :data="{"label":"theLabel","link":"theLink","type":null}" type="button" />
-
-
+      :dispatch{data='{"label":"asf","link":"asdf","type":null}' />
 
 
 
