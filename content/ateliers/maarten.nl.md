@@ -32,7 +32,7 @@ elements:
 
 
 
-      :dispatch{:data='{"teacher":["map-firstname-laure-lastname-dhoe","map-firstname-dsfa-lastname-sadf"]}'}
+      :dispatch{:data='{"teacher":["map-firstname-laure-lastname-dhoe","map-firstname-dsfa-lastname-sadf"]}' type='person'}
     title: ""
     width: 1
   - type: text

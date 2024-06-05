@@ -14,34 +14,3 @@ const props = defineProps({
   }
 });
 </script>
-
-<style scoped>
-
-@container (min-width: 300px) and (max-width: 800px) {
-  .pmcp-teacher_container {
-    gap: 3%;
-    /*background-color: blue;*/
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  }
-
-  .pmcp-teacher_element {
-    /*background-color: red;*/
-    grid-column: span 1;
-  }
-}
-
-@container (min-width: 550px) {
-  .pmcp-teacher_container {
-    gap: 3%;
-    /*background-color: yellow;*/
-    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
-  }
-
-  .pmcp-teacher_element {
-    /*background-color: green;*/
-    grid-column: span 1;
-  }
-}
-
-
-</style>

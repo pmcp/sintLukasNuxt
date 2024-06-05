@@ -1,24 +1,24 @@
 <template>
-  <ui-button v-if="props.type === 'ui-button'" :style="2" :to="props.data.link" :download="props.data.download" >
-    {{ props.data.label}}
-  </ui-button>
+
+
+  <div v-if="props.type === 'button'" class="inline mr-1">
+    <ui-button :style="2" :to="props.data.link" :download="props.data.download" >
+      {{ props.data.label}}
+    </ui-button>
+  </div>
+
+  <div v-else-if="props.type === 'person'" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 p-0 pmcp-teacher_container">
+    <ContentQuery v-for="t in props.data.teacher" :path="`teachers/${t}.nl`" find="one" v-slot="{ data }" >
+      <elements-teacher :data="data" class="pmcp-teacher_element"/>
+    </ContentQuery>
+
+
+  </div>
+
 </template>
 <script setup>
-import { UiButton } from '#components'
-
 const props = defineProps({
   data: Object,
   type: String
 });
-console.log(props.data)
-const comp = resolveComponent('ui-button')
-const comp2 = resolveComponent(props.type)
-
-const typeComponent = computed(() => {
-  const map = {
-    'ui-button': UiButton
-  }
-  return map[props.type]
-})
-
 </script>
