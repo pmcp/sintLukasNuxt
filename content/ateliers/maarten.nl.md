@@ -21,12 +21,6 @@ elements:
       Je maakt op een ludieke manier kennis met verschillende technieken: schilderen, tekenen, collages maken, sculpturen kneden in klei, fotograferen, etsen, ... Laat je verwonderen door de rijke wereld van materialen, technieken en kunststromingen. Je wordt geprikkeld om te doen, te experimenteren en prikkels al spelend om te zetten in sprekende beelden!
 
 
-      :dispatch{:data='{"label":"albesdf","link":"asdf","type":null} type="button"}
-
-
-      :dispatch{:data='{"label":"label","link":"link","type":null,"download":"/assets/uploads/2.jpg"}' type="ui-button"}
-
-
       ## Nieuw
 
 
@@ -36,7 +30,9 @@ elements:
       Hou je van fotografie, film, animatie, stopmotion en soundscapes? Dan krijg je in dit atelier naast tekenen, boetseren en schilderen ook audiovisuele technieken aangeboden!
 
 
-      :dispatch{:data='{"teacher":["map-firstname-dsfa-lastname-sadf"]}'}
+
+
+      :dispatch{:data='{"teacher":["map-firstname-laure-lastname-dhoe","map-firstname-dsfa-lastname-sadf"]}'}
     title: ""
     width: 1
   - type: text
