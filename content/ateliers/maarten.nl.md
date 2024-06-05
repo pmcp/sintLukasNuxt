@@ -21,7 +21,7 @@ elements:
       Je maakt op een ludieke manier kennis met verschillende technieken: schilderen, tekenen, collages maken, sculpturen kneden in klei, fotograferen, etsen, ... Laat je verwonderen door de rijke wereld van materialen, technieken en kunststromingen. Je wordt geprikkeld om te doen, te experimenteren en prikkels al spelend om te zetten in sprekende beelden!
 
 
-      :dispatch{:data='{"label":"albesdf","link":"asdf","type":null}' type="ui-button"}
+      :dispatch{:data='{"label":"albesdf","link":"asdf","type":null} type="button"}
 
 
       :dispatch{:data='{"label":"label","link":"link","type":null,"download":"/assets/uploads/2.jpg"}' type="ui-button"}
@@ -52,14 +52,6 @@ elements:
 
       Meer info in verband met de planning en de locatie?\
       info.academie@sintlukas.brussels of 02/217 77 00
-
-
-      <details>
-        <summary>undefined</summary>
-
-        undefined
-
-      </details>
     width: 1
   - type: images
     image:
