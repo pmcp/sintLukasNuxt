@@ -15,5 +15,10 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   ui: {
     safelistColors: ['black', 'primary', 'secondary']
-  }
+  },
+  // content: {
+  //   markdown: {
+  //     tags: { dispatch: 'dispatch'}
+  //   }
+  // }
 })

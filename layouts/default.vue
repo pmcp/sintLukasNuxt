@@ -2,7 +2,7 @@
   <div>
     <main-header />
     <UPage>
-      <UPageBody >
+      <UPageBody :ui="{ wrapper: 'mt-0'}">
         <slot />
       </UPageBody>
     </UPage>

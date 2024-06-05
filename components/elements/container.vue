@@ -29,6 +29,9 @@
         <elements-locations v-if="element.type === 'locations'" :locations="element.location" />
         <!-- TEACHERS-->
         <elements-teachers v-if="element.type === 'teachers'" :teachers="element.teacher" />
+        <!-- COURSES-->
+<!--        <pre>{{ element }}</pre>-->
+        <elements-courses v-if="element.type === 'ateliers'" :courses="element.category" />
       </div>
     </UPageGrid>
   </div>

@@ -13,6 +13,12 @@ public_folder: /assets/uploads
 
 publish_mode: editorial_workflow
 
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "_"
+
+
 collections:
   - label: 'Settings'
     name: 'site'
@@ -51,6 +57,21 @@ collections:
             fields:
               - { label: FR, name: fr, widget: string }
               - { label: NL, name: nl, widget: string }
+      - label: 'Categories'
+        name: 'categories'
+        file: 'content/site/categories.json'
+        format: 'json'
+        editor:
+          preview: false
+        fields:
+          - label: "ateliers"
+            name: "ateliers"
+            widget: "list"
+            summary: '{{fields.nl}}'
+            fields:
+              - { label: NL, name: nl, widget: string }
+              - { label: FR, name: fr, widget: string, required: false }
+              - { label: ID, name: id, widget: uuid}
       - label: 'Navigation'
         name: 'navigation'
         file: 'content/site/navigation.json'
@@ -226,6 +247,29 @@ collections:
                   - { label: "1/2", value: 1 }
                   - { label: "Full", value: 2 }
               - {label: "Squares", name: "squares", widget: "boolean", default: false, required: false}
+          - label: 'Ateliers'
+            name: 'ateliers'
+            widget: object
+            fields:
+              - label: "Width"
+                name: "width"
+                widget: "select"
+                default: 3
+                options:
+                  - { label: "1/2", value: 1 }
+                  - { label: "Full", value: 2 }
+              - { label: "Squares", name: "squares", widget: "boolean", default: false, required: false }
+              - widget: list
+                name: 'category'
+                fields:
+                  - label: "Category"
+                    name: "category"
+                    widget: "relation"
+                    collection: "site"
+                    file: "categories"
+                    search_fields: [ "ateliers.*.nl" ]
+                    display_fields: [ "ateliers.*.nl" ]
+                    value_field: "ateliers.*.id"
       - label: "Featured Image"
         required: false
         name: "image"
@@ -256,25 +300,52 @@ collections:
     folder: 'content/ateliers'
     create: true
     format: 'frontmatter'
+    summary: '{{title}} - {{age}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true, i18n: true }
       - { label: 'Age', name: 'age', widget: 'string', required: true, i18n: true }
       - { label: 'Intro', name: 'intro', widget: 'markdown', i18n: true, required: false }
+      - label: "Category"
+        name: "categories"
+        widget: "relation"
+        collection: "site"
+        file: "categories"
+        search_fields: [ "ateliers.*.nl" ]
+        display_fields: [ "ateliers.*.nl" ]
+        value_field: "ateliers.*.id"
+      - label: "Featured Image"
+        name: "mainImage"
+        widget: "image"
+        choose_url: true
+        media_library:
+          config:
+            multiple: false
       - label: 'Content'
         required: false
         i18n: true
         name: 'elements'
         label_singular: 'Element'
         widget: 'list'
+        summary: "{{fields.title}}"
         types:
           - label: 'Text'
             name: 'text'
             widget: object
+            summary: "Width: {{fields.width}}/2"
             fields:
-              - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
+              - { label: "Title", name: "title", widget: "string", required: false, i18n: true }
               - { label: text, name: markdown, widget: markdown }
+              - label: "Width"
+                name: "width"
+                widget: "select"
+                default: 3
+                options:
+                  - { label: "1/2", value: 1 }
+                  - { label: "Full", value: 2 }
+              - { label: "Squares", name: "squares", widget: "boolean", default: false, required: false }
           - label: 'Locations'
             name: 'locations'
+            summary: "{{fields.title}} - Width: {{fields.width}}/2"
             fields:
               - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
               - label: "Location"
@@ -285,8 +356,17 @@ collections:
                 search_fields: [ "{{name}}" ]
                 value_field: "{{slug}}"
                 display_fields: [ "{{name}}" ]
+              - label: "Width"
+                name: "width"
+                widget: "select"
+                default: 3
+                options:
+                  - { label: "1/2", value: 1 }
+                  - { label: "Full", value: 2 }
+              - { label: "Squares", name: "squares", widget: "boolean", default: false, required: false }
           - label: 'Teachers'
             name: 'teachers'
+            summary: "{{fields.title}} - Width: {{fields.width}}/2"
             fields:
               - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
               - label: "Teacher"
@@ -294,11 +374,20 @@ collections:
                 name: "teacher"
                 widget: "relation"
                 collection: "teachers"
-                search_fields: [ "{{name}}" ]
+                search_fields: [ "{{firstName}}", "{{lastName}}" ]
                 value_field: "{{slug}}"
-                display_fields: [ "{{name}}" ]
+                display_fields: [ "{{firstName}} {{lastName}}" ]
+              - label: "Width"
+                name: "width"
+                widget: "select"
+                default: 3
+                options:
+                  - { label: "1/2", value: 1 }
+                  - { label: "Full", value: 2 }
+              - { label: "Squares", name: "squares", widget: "boolean", default: false, required: false }
           - label: 'Images'
             name: 'images'
+            summary: "{{fields.title}} - Width: {{fields.width}}/2"
             widget: object
             fields:
               - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
@@ -309,9 +398,9 @@ collections:
                   - { label: "Masonry", value: 1 }
                   - { label: "Frame", value: 2 }
                   - { label: "Justified", value: 3 }
+                  - { label: "Full Width", value: 4 }
               - widget: list
                 name: 'image'
-                #                summary: '{{fields.fr}} - {{fields.nl}}'
                 fields:
                   - label: "Description"
                     name: "description"
@@ -326,9 +415,18 @@ collections:
                     media_library:
                       config:
                         multiple: false
+              - label: "Width"
+                name: "width"
+                widget: "select"
+                default: 3
+                options:
+                  - { label: "1/2", value: 1 }
+                  - { label: "Full", value: 2 }
+              - { label: "Squares", name: "squares", widget: "boolean", default: false, required: false }
           - label: 'Buttons'
             name: 'buttons'
             widget: object
+            summary: "{{fields.title}} - Width: {{fields.width}}/2"
             fields:
               - { label: 'Title', name: 'title', widget: 'string', required: false, i18n: true }
               - widget: list
@@ -350,13 +448,37 @@ collections:
                       config:
                         multiple: false
                         max_file_size: 1024000 # in bytes, only for default media library
-          - label: 'Reservation'
-            name: 'reservation'
+              - label: "Width"
+                name: "width"
+                widget: "select"
+                default: 3
+                options:
+                  - { label: "1/2", value: 1 }
+                  - { label: "Full", value: 2 }
+              - { label: "Squares", name: "squares", widget: "boolean", default: false, required: false }
+          - label: 'Ateliers'
+            name: 'ateliers'
             widget: object
             fields:
-              - widget: "hidden"
-                name: "reservation"
-                default: "reservation"
+              - label: "Width"
+                name: "width"
+                widget: "select"
+                default: 3
+                options:
+                  - { label: "1/2", value: 1 }
+                  - { label: "Full", value: 2 }
+              - { label: "Squares", name: "squares", widget: "boolean", default: false, required: false }
+              - widget: list
+                name: 'category'
+                fields:
+                  - label: "Category"
+                    name: "category"
+                    widget: "relation"
+                    collection: "site"
+                    file: "categories"
+                    search_fields: [ "ateliers.*.nl" ]
+                    display_fields: [ "ateliers.*.nl" ]
+                    value_field: "ateliers.*.id"
   - name: 'teachers'
     i18n: true
     label: 'Teachers'
