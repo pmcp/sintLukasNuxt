@@ -24,6 +24,9 @@ elements:
       :dispatch{:data='{"label":"albesdf","link":"asdf","type":null} type="button"}
 
 
+      :dispatch{:data='{"label":"albesdf","link":"asdf","type":null} type="button"}
+
+
       ## Nieuw
 
 
