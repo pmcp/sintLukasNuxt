@@ -106,8 +106,8 @@ collections:
     folder: 'content'
     create: true
     format: 'frontmatter'
-    # editor:
-    #   preview: true
+    editor:
+       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true, i18n: true }
       - { label: 'Intro', name: 'intro', widget: 'text', i18n: true, required: false }
