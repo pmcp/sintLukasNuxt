@@ -18,6 +18,9 @@ elements:
 
 
       :dispatch{:data='{"label":"asdf","link":"asdf","type":null}' type='button'}
+
+
+      :dispatch{:data='{"label":"asdf","link":"asdf","type":null}' type='button'}
     width: 1
     squares: true
   - type: teachers
