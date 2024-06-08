@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="almost done the widget thing">
-      <change afterPath="$PROJECT_DIR$/public/admin/components/editor-components.js" afterDir="false" />
+    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="think i'm done with widgets">
+      <change afterPath="$PROJECT_DIR$/components/dev/pre.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/components/editor-button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/components/editor-person.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/elements/course.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/course.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/components/widget-uuid.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/widgets/uuid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +28,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2h0F8jsqpBJ9QAChvPaH6rlxIzl" />
   <component name="ProjectViewState">
@@ -56,11 +57,11 @@
       <recent name="$PROJECT_DIR$/public/assets/animatedGrid" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/admin/widgets" />
       <recent name="$PROJECT_DIR$/components/elements" />
       <recent name="$PROJECT_DIR$/pages/preview" />
       <recent name="$PROJECT_DIR$/public/assets/sandbox" />
       <recent name="$PROJECT_DIR$/public/assets/sandbox/" />
-      <recent name="$PROJECT_DIR$/public/assets/uploads" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -74,7 +75,7 @@
       <workItem from="1716722931254" duration="1548000" />
       <workItem from="1716724523982" duration="99061000" />
       <workItem from="1717623357912" duration="3041000" />
-      <workItem from="1717763592279" duration="18960000" />
+      <workItem from="1717763592279" duration="23055000" />
     </task>
     <task id="LOCAL-00001" summary="added name and author to packages.json">
       <created>1716724952483</created>
@@ -251,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717841905476</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="think i'm done with widgets">
+      <created>1717856055519</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1717856055519</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +277,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added project files" />
     <MESSAGE value="first content setup" />
     <MESSAGE value="added grid and nav" />
     <MESSAGE value="added masonry" />
@@ -294,6 +301,19 @@
     <MESSAGE value="simple bg hack" />
     <MESSAGE value="first preview" />
     <MESSAGE value="almost done the widget thing" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost done the widget thing" />
+    <MESSAGE value="think i'm done with widgets" />
+    <option name="LAST_COMMIT_MESSAGE" value="think i'm done with widgets" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/elements/course.vue</url>
+          <line>15</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
