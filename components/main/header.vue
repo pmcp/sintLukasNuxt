@@ -21,9 +21,9 @@
     </template>
 
     <template #right>
-      <ui-button :style="0">
+      <elements-button :style="0">
         Inschrijven
-      </ui-button>
+      </elements-button>
     </template>
 
     <template #panel>

@@ -1,10 +1,10 @@
 <template>
 
-
+<!--  <pre>{{ props }}</pre>-->
   <div v-if="props.type === 'button'" class="inline mr-1">
-    <ui-button :style="2" :to="props.data.link" :download="props.data.download" >
+    <elements-button :style="2" :to="props.data.link" :download="props.data.download" >
       {{ props.data.label}}
-    </ui-button>
+    </elements-button>
   </div>
 
   <div v-else-if="props.type === 'person'" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 p-0 pmcp-teacher_container">

@@ -10,148 +10,24 @@
 <body>
 <!-- Include the script that builds the page and powers Decap CMS -->
 <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-<script src="./index.js" type="module"></script>
+
+<!-- Extra widgets -->
+<script src="./components/widget-uuid.js" type="module"></script>
+
+<!-- Extra Editor Widgets -->
+<!--<script src="./components/editor-button.js" type="module"></script>-->
+<script src="./components/editor-person.js" type="module"></script>
+
+<!-- Preview -->
+<script src="./preview.js" type="module"></script>
 </body>
 </html>
 
 
 <script>
-    CMS.registerEditorComponent({
-        // Internal id of the component
-        id: "button",
-        // Visible label
-        label: "Button",
-        // Fields the user need to fill out when adding an instance of the component
-        fields: [
-            {
-                name: 'label',
-                label: 'label',
-                widget: 'string'
-            },
-            {
-                name: 'link',
-                label: 'link',
-                widget: 'string'
-            },
-            {
-                name: 'type',
-                label: 'type',
-                widget: 'select',
-                options: [
-                    { label: "White", value: 0 },
-                    { label: "Black", value: 1 },
-                    { label: "Primary", value: 0 }
-                ]
-            },
-            {
-                name: 'download',
-                label: 'link',
-                widget: 'file',
-                media_library: {
-                    config: {
-                        multiple: false,
-                        max_file_size: 1024000
-                    }
-                }
-            },
-        ],
-        pattern: '/dispatch :data="(\{[^"]+\})"$/m',
-        // This is used to populate the custom widget in the markdown editor in the CMS.
-        fromBlock: function(match) {
-            const data = JSON.parse(match[1]);
-            return {
-                label: match[1].label,
-                link: match[1].link
-            };
-        },
-       // This is used to serialize the data from the custom widget to the
-        // markdown document
-        toBlock: function(data) {
-            return `:dispatch{:data='${JSON.stringify( data )}'} type='button'`;
-        },
-        // Preview output for this component. Can either be a string or a React component
-        // (component gives better render performance)
-        toPreview: function(data) {
-            return `
-test
-`;
-        }
-    })
-
-    CMS.registerEditorComponent({
-            // Internal id of the component
-            id: "person",
-            // Visible label
-            label: "Person",
-            // Fields the user need to fill out when adding an instance of the component
-            fields: [
-                {
-                    multiple: true,
-                    name: 'teacher',
-                    widget: 'relation',
-                    collection: 'teachers',
-                    search_fields: [ '{{firstName}}", "{{lastName}}' ],
-                    value_field: '{{slug}}',
-                    display_fields: [ '{{firstName}} {{lastName}}' ],
-                }
-            ],
-            pattern: '/dispatch :data="(\{[^"]+\})"$/m',
-            // This is used to populate the custom widget in the markdown editor in the CMS.
-            fromBlock: function(match) {
-                const data = JSON.parse(match[1]);
-                return {
-                    label: match[1].label,
-                    link: match[1].link
-                };
-            },
-            // This is used to serialize the data from the custom widget to the
-            // markdown document
-            toBlock: function(data) {
-                return `:dispatch{:data='${JSON.stringify( data )}'} type='person'}`;
-            },
-            // Preview output for this component. Can either be a string or a React component
-            // (component gives better render performance)
-            toPreview: function(data) {
-                return `
-test
-`;
-            }
-        });
 
 
 <!--PREVIEW -->
 
-
-window.previewDataCMS = {};
-const GeneratePreview = (type, properties = []) => createClass({
-        render: function () {
-            const { entry } = this.props;
-            const data = { type };
-            const keys = (properties || []);
-            if (Array.isArray(keys)) {
-                keys.forEach((key) => {
-                    try {
-                        const tmp = entry.getIn(['data', key]);
-                        data[key] = tmp === 'undefined' ? '' : tmp;
-                    } catch (e) {
-                        console.log(e);
-                    }
-                })
-                try {
-                    data.mediaFiles = entry.get('mediaFiles')
-                } catch (e) {
-                    console.log(e);
-                }
-            }
-            let host = window.location.host;
-            const isLocal = ['localhost', '127.0.0.1', '0.0.0.0'].includes((host || 'default-online').split(':')[0]);
-
-            const src = `${isLocal ? 'http' : 'https'}://${host}/preview/${type}`;
-            window.previewDataCMS = data;
-            const html = `<iframe border="0" src="${src}" width="100%" height="100%" style="border: 1px solid #EEE; height: calc(100vh - 80px)"></iframe>`;
-            return h('div', { dangerouslySetInnerHTML: { __html: html } });
-        },
-    });
-CMS.registerPreviewTemplate('pages', GeneratePreview('pages', ['title', 'intro', 'elements', 'image']));
 
 </script>
