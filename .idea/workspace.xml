@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="added stuff, mainly colors for categories">
+    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="effect on hover">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/elements/course.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/course.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/main/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/header.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +71,7 @@
       <workItem from="1716722931254" duration="1548000" />
       <workItem from="1716724523982" duration="99061000" />
       <workItem from="1717623357912" duration="3041000" />
-      <workItem from="1717763592279" duration="23355000" />
+      <workItem from="1717763592279" duration="25528000" />
     </task>
     <task id="LOCAL-00001" summary="added name and author to packages.json">
       <created>1716724952483</created>
@@ -262,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717860022193</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="effect on hover">
+      <created>1717860304869</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1717860304869</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +287,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added grid and nav" />
     <MESSAGE value="added masonry" />
     <MESSAGE value="added locations" />
     <MESSAGE value="added mapbox" />
@@ -305,7 +311,8 @@
     <MESSAGE value="almost done the widget thing" />
     <MESSAGE value="think i'm done with widgets" />
     <MESSAGE value="added stuff, mainly colors for categories" />
-    <option name="LAST_COMMIT_MESSAGE" value="added stuff, mainly colors for categories" />
+    <MESSAGE value="effect on hover" />
+    <option name="LAST_COMMIT_MESSAGE" value="effect on hover" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
