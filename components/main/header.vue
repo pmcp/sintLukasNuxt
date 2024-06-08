@@ -1,6 +1,6 @@
 <template>
 
-  <UHeader :ui="{ wrapper: 'bg-background/100 backdrop-blur-none border-b border-second-300 pt-2 pb-4 sticky -top-0', container: 'items-end', left: 'lg:flex-none mr-4' }">
+  <UHeader :ui="{ wrapper: 'bg-background/100 backdrop-blur-none border-b border-second-300 pt-2 pb-4 sticky -top-0', container: 'items-end', left: 'lg:flex-none mr-4', button: { base: 'lg:hidden rounded-none bg-transparent hover:bg-primary-500', icon: { open: 'i-heroicons-bars-3-20-solid ', close: 'i-heroicons-x-mark-20-solid ' } } }">
     <template #logo>
       <svg-logo />
     </template>
@@ -15,22 +15,6 @@
   after: 'after:absolute after:bottom-0 after:inset-x-2 after:block after:h-[1px] after:mt-2 hover:after:bg-primary-500',
   active: 'text-gray-900 dark:text-white  after:bg-black-100 dark:after:bg-black-100 ',
   inactive: 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white',
-  label: 'truncate relative',
-  icon: {
-    base: 'flex-shrink-0 w-5 h-5 relative',
-    active: 'text-gray-700 dark:text-gray-200',
-    inactive: 'text-gray-400 dark:text-gray-500 group-hover:text-gray-700 dark:group-hover:text-gray-200',
-  },
-  avatar: {
-    base: 'flex-shrink-0',
-    size: '2xs',
-  },
-  badge: {
-    base: 'flex-shrink-0 ml-auto relative rounded',
-    color: 'gray',
-    variant: 'solid',
-    size: 'xs',
-  },
 }"/>
       </div>
     </template>
@@ -43,20 +27,24 @@
     </template>
 
     <template #panel>
-
-      <UVerticalNavigation :links="navItems">
-        <template #default="{ link }">
-          <!-- TODO: Lang-->
-          <ULink
-              :to="link.label + '.nl'"
-              active-class="text-primary bg-red-100"
-              inactive-class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
-          >
-            <!-- TODO: Lang-->
-            {{  link.label  }}
-          </ULink>
-        </template>
-      </UVerticalNavigation>
+      <UVerticalNavigation :links="navItems" :ui="{
+  wrapper: 'relative ',
+  base: 'text-center group relative flex items-center gap-1.5 focus:outline-none focus-visible:outline-none dark:focus-visible:outline-none focus-visible:before:ring-inset focus-visible:before:ring-1 focus-visible:before:ring-primary-500 dark:focus-visible:before:ring-primary-400 before:absolute before:inset-px before:rounded-md disabled:cursor-not-allowed disabled:opacity-75',
+  ring: 'focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
+  padding: 'px-2.5 py-1.5',
+  width: 'w-fit',
+  rounded: 'rounded-none',
+  font: 'font-medium',
+  size: 'text-sm',
+  active: 'text-black dark:text-white before:bg-transparent border-b dark:before:bg-gray-800',
+  inactive: 'text-black dark:text-gray-400 hover:text-black dark:hover:text-white hover:before:bg-transparent dark:hover:before:bg-transparent',
+  label: 'truncate relative',
+  divider: {
+    wrapper: {
+      base: 'p-2',
+    },
+  },
+}"/>
     </template>
 
 
