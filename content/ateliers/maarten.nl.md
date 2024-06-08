@@ -30,9 +30,7 @@ elements:
       Hou je van fotografie, film, animatie, stopmotion en soundscapes? Dan krijg je in dit atelier naast tekenen, boetseren en schilderen ook audiovisuele technieken aangeboden!
 
 
-
-
-      :dispatch{:data='{"teacher":["map-firstname-laure-lastname-dhoe","map-firstname-dsfa-lastname-sadf"]}' type='person'}
+      :dispatch {:data='{"label":"testLabel","link":"testLink","type":null,"download":"/assets/uploads/2.jpg"}' type='button'}
     title: ""
     width: 1
   - type: text
