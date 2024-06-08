@@ -1,5 +1,5 @@
 <template>
-  <UFooter class="bg-accent-200 border-b-4 border-accent-800 mt-24">
+  <UFooter class="bg-primary-200 border-b-4 border-accent-800 mt-24">
     <template #top>
       <UFooterColumns :links="links">
         <template #right>
