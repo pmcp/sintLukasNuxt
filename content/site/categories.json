@@ -2,23 +2,28 @@
   "ateliers": [
     {
       "nl": "Jongeren",
-      "id": "_CjrAc9jGjz9N8KjUjcYV"
+      "id": "_CjrAc9jGjz9N8KjUjcYV",
+      "color": "#e53737"
     },
     {
       "id": "90iJn1gwW8MuR2-xvbPDj",
-      "nl": "Kinderen"
+      "nl": "Kinderen",
+      "color": "#59cf99"
     },
     {
       "id": "TL9yAVIYU-VSuRiIo-Wvf",
-      "nl": "Volwassenen"
+      "nl": "Volwassenen",
+      "color": "#008dad"
     },
     {
       "id": "4r3Gdjll2uIxKn_19qYRp",
-      "nl": "Kunstkuur"
+      "nl": "Kunstkuur",
+      "color": "#91fd32"
     },
     {
       "id": "xpPziZiLaZZdEtlcXPYnV",
-      "nl": "Track"
+      "nl": "Track",
+      "color": "#4928d2"
     }
   ]
 }
