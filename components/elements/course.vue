@@ -36,9 +36,9 @@
           </template>
           <div class="overflow-hidden">
             <div class="relative" v-if="data.mainImage">
-              <nuxt-img class="w-full group-hover:scale-110 ease-in duration-200 grayscale " :src="data.mainImage" />
-              <div class="w-full h-full  absolute top-0 left-0 mix-blend-overlay" :style="`background-color: ${category.color}`"></div>
-              <div class="w-full h-full  absolute top-0 left-0 mix-blend-lighten opacity-50" :style="`background-color: ${category.color}`"></div>
+              <nuxt-img class="w-full group-hover:scale-110 transition-all ease-in duration-200 grayscale group-hover:grayscale-0 transition-all" :src="data.mainImage" />
+              <div class="w-full h-full group-hover:opacity-10 transition-all  absolute top-0 left-0 mix-blend-overlay" :style="`background-color: ${category.color}`"></div>
+              <div class="w-full h-full  group-hover:opacity-10 transition-all absolute top-0 left-0 mix-blend-lighten opacity-50" :style="`background-color: ${category.color}`"></div>
             </div>
           </div>
           <template #footer >

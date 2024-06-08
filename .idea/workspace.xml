@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="think i'm done with widgets">
-      <change afterPath="$PROJECT_DIR$/components/dev/pre.vue" afterDir="false" />
+    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="added stuff, mainly colors for categories">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/elements/course.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/course.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/components/widget-uuid.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/widgets/uuid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +71,7 @@
       <workItem from="1716722931254" duration="1548000" />
       <workItem from="1716724523982" duration="99061000" />
       <workItem from="1717623357912" duration="3041000" />
-      <workItem from="1717763592279" duration="23055000" />
+      <workItem from="1717763592279" duration="23355000" />
     </task>
     <task id="LOCAL-00001" summary="added name and author to packages.json">
       <created>1716724952483</created>
@@ -259,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717856055519</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="added stuff, mainly colors for categories">
+      <created>1717860022193</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1717860022193</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +280,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first content setup" />
     <MESSAGE value="added grid and nav" />
     <MESSAGE value="added masonry" />
     <MESSAGE value="added locations" />
@@ -302,7 +304,8 @@
     <MESSAGE value="first preview" />
     <MESSAGE value="almost done the widget thing" />
     <MESSAGE value="think i'm done with widgets" />
-    <option name="LAST_COMMIT_MESSAGE" value="think i'm done with widgets" />
+    <MESSAGE value="added stuff, mainly colors for categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="added stuff, mainly colors for categories" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
