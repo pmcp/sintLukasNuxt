@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="nav work">
-      <change beforePath="$PROJECT_DIR$/components/main/footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/footer.vue" afterDir="false" />
+    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="small change">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +72,7 @@
       <workItem from="1716722931254" duration="1548000" />
       <workItem from="1716724523982" duration="99061000" />
       <workItem from="1717623357912" duration="3041000" />
-      <workItem from="1717763592279" duration="26990000" />
+      <workItem from="1717763592279" duration="28196000" />
     </task>
     <task id="LOCAL-00001" summary="added name and author to packages.json">
       <created>1716724952483</created>
@@ -282,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717863686894</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="small change">
+      <created>1717863964446</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1717863964446</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +309,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added mapbox" />
     <MESSAGE value="fixing import #1" />
     <MESSAGE value="didn't need app config" />
     <MESSAGE value="es module fix #2" />
@@ -325,7 +333,8 @@
     <MESSAGE value="effect on hover" />
     <MESSAGE value="better nav" />
     <MESSAGE value="nav work" />
-    <option name="LAST_COMMIT_MESSAGE" value="nav work" />
+    <MESSAGE value="small change" />
+    <option name="LAST_COMMIT_MESSAGE" value="small change" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
