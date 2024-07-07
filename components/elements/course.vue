@@ -67,8 +67,8 @@ const props = defineProps({
 });
 
 let category = ref('')
-const categories = await queryContent('.site/categories').findOne()
-category.value = categories.ateliers.find(item => item.id === props.course);
+const { data } = await useAsyncData('categories', () => queryContent('.site/categories').findOne())
+category.value = data.ateliers.find(item => item.id === props.course);
 
 
 
