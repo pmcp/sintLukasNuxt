@@ -54,7 +54,7 @@
 
 
 <script setup>
-const { data } = await useAsyncData('navigation', () => queryContent('site/navigation').findOne())
+const { data } = await useAsyncData('navigation', () => queryContent('.site/navigation').findOne())
 // TODO: Lang
 const lang = 'nl'
 const navItems = data.value.navigation.map(n => ({ 'label': n[`label${lang}`], to: `/${n.page}.nl`}))
