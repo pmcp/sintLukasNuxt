@@ -25,7 +25,7 @@ collections:
     files:
       - label: 'Info'
         name: 'info'
-        file: 'content/site/info.json'
+        file: 'content/.site/info.json'
         format: 'json'
         editor:
           preview: false
@@ -45,7 +45,7 @@ collections:
           }
       - label: 'Translations'
         name: 'translations'
-        file: 'content/site/translations.json'
+        file: 'content.translations.json'
         format: 'json'
         editor:
           preview: false
@@ -59,7 +59,7 @@ collections:
               - { label: NL, name: nl, widget: string }
       - label: 'Categories'
         name: 'categories'
-        file: 'content/site/categories.json'
+        file: 'content/.site/categories.json'
         format: 'json'
         editor:
           preview: false
@@ -75,7 +75,7 @@ collections:
               - { label: 'Color', name: 'color', widget: 'color', enableAlpha: true, allowInput: true }
       - label: 'Navigation'
         name: 'navigation'
-        file: 'content/site/navigation.json'
+        file: 'content/.site/navigation.json'
         format: 'json'
         i18n: true
         editor:
