@@ -17,6 +17,11 @@ export default defineNuxtConfig({
     safelistColors: ['black', 'primary', 'secondary']
   },
   // content: {
+  //   navigation: {
+  //     fields: ['title']
+  //   }
+  // }
+  // content: {
   //   markdown: {
   //     tags: { dispatch: 'dispatch'}
   //   }

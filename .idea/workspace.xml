@@ -4,10 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="nav work">
+    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="changed to async">
+      <change afterPath="$PROJECT_DIR$/components/dev/container.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/site/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/content/.site/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/site/navigation.json" beforeDir="false" afterPath="$PROJECT_DIR$/content/.site/navigation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/dev/content.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/dev/content.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/elements/course.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/course.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/main/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/.site/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/content/_site/categories.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/.site/navigation.json" beforeDir="false" afterPath="$PROJECT_DIR$/content/_site/navigation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/ateliers/maarten.fr.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/1.ateliers/maarten.fr.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/ateliers/maarten.nl.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/1.ateliers/maarten.nl.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/locations/map-name-asdf-location-type-point-coordinates-78-046875-27-8390761.fr.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/2.locations/map-name-asdf-location-type-point-coordinates-78-046875-27-8390761.fr.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/locations/map-name-asdf-location-type-point-coordinates-78-046875-27-8390761.nl.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/2.locations/map-name-asdf-location-type-point-coordinates-78-046875-27-8390761.nl.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/teachers/map-firstname-dsfa-lastname-sadf.fr.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/3.teachers/map-firstname-dsfa-lastname-sadf.fr.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/teachers/map-firstname-dsfa-lastname-sadf.nl.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/3.teachers/map-firstname-dsfa-lastname-sadf.nl.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/teachers/map-firstname-laure-lastname-dhoe.fr.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/3.teachers/map-firstname-laure-lastname-dhoe.fr.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/teachers/map-firstname-laure-lastname-dhoe.nl.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/3.teachers/map-firstname-laure-lastname-dhoe.nl.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/sandbox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/sandbox.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +103,8 @@
       <workItem from="1720207016103" duration="33000" />
       <workItem from="1720215405859" duration="2450000" />
       <workItem from="1720287694396" duration="716000" />
-      <workItem from="1720292037627" duration="2661000" />
+      <workItem from="1720292037627" duration="2969000" />
+      <workItem from="1720385917762" duration="5267000" />
     </task>
     <task id="LOCAL-00001" summary="added name and author to packages.json">
       <created>1716724952483</created>
@@ -300,7 +316,39 @@
       <option name="project" value="LOCAL" />
       <updated>1717863686894</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="changed the site settings to be ignored by content">
+      <option name="closed" value="true" />
+      <created>1720385642739</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1720385642739</updated>
+    </task>
+    <task id="LOCAL-00032" summary="changed the site settings to be ignored by content 2">
+      <option name="closed" value="true" />
+      <created>1720386218016</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1720386218016</updated>
+    </task>
+    <task id="LOCAL-00033" summary="added dev content comp">
+      <option name="closed" value="true" />
+      <created>1720386233478</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1720386233478</updated>
+    </task>
+    <task id="LOCAL-00034" summary="changed to async">
+      <option name="closed" value="true" />
+      <created>1720386367740</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1720386367740</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,10 +366,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added mapbox" />
-    <MESSAGE value="fixing import #1" />
-    <MESSAGE value="didn't need app config" />
-    <MESSAGE value="es module fix #2" />
     <MESSAGE value="removed clientOnly, see if still works?" />
     <MESSAGE value="designed a bit more" />
     <MESSAGE value="added cards" />
@@ -343,7 +387,11 @@
     <MESSAGE value="effect on hover" />
     <MESSAGE value="better nav" />
     <MESSAGE value="nav work" />
-    <option name="LAST_COMMIT_MESSAGE" value="nav work" />
+    <MESSAGE value="changed the site settings to be ignored by content" />
+    <MESSAGE value="changed the site settings to be ignored by content 2" />
+    <MESSAGE value="added dev content comp" />
+    <MESSAGE value="changed to async" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed to async" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

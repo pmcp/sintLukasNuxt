@@ -25,7 +25,7 @@ collections:
     files:
       - label: 'Info'
         name: 'info'
-        file: 'content/.site/info.json'
+        file: 'content/_site/info.json'
         format: 'json'
         editor:
           preview: false
@@ -59,7 +59,7 @@ collections:
               - { label: NL, name: nl, widget: string }
       - label: 'Categories'
         name: 'categories'
-        file: 'content/.site/categories.json'
+        file: 'content/_site/categories.json'
         format: 'json'
         editor:
           preview: false
@@ -75,7 +75,7 @@ collections:
               - { label: 'Color', name: 'color', widget: 'color', enableAlpha: true, allowInput: true }
       - label: 'Navigation'
         name: 'navigation'
-        file: 'content/.site/navigation.json'
+        file: 'content/_site/navigation.json'
         format: 'json'
         i18n: true
         editor:
@@ -284,7 +284,7 @@ collections:
     i18n: true
     label: 'Locations'
     label_singular: 'Location'
-    folder: 'content/locations'
+    folder: 'content/2.locations'
     create: true
     format: 'frontmatter'
     fields:
@@ -298,7 +298,7 @@ collections:
     i18n: true
     label: 'Ateliers'
     label_singular: 'Atelier'
-    folder: 'content/ateliers'
+    folder: 'content/1.ateliers'
     create: true
     format: 'frontmatter'
     summary: '{{title}} - {{age}}'
@@ -484,7 +484,7 @@ collections:
     i18n: true
     label: 'Teachers'
     label_singular: 'Teacher'
-    folder: 'content/teachers'
+    folder: 'content/3.teachers'
     create: true
     format: 'frontmatter'
     fields:

@@ -27,7 +27,7 @@
           }
         }">
           <template #header>
-            <ContentQuery path=".site/categories" v-slot="{ data }">
+            <ContentQuery path="_site/categories" v-slot="{ data }">
               <h2 class="pt-2 text-2xl font-bold uppercase">
                 <!-- TODO: Lang-->
                 {{ category['nl'] }}
@@ -67,7 +67,7 @@ const props = defineProps({
 });
 
 let category = ref('')
-const { data } = await useAsyncData('categories', () => queryContent('.site/categories').findOne())
+const { data } = await useAsyncData('categories', () => queryContent('_site/categories').findOne())
 category.value = data.ateliers.find(item => item.id === props.course);
 
 
