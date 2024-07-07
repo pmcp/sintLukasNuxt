@@ -3,6 +3,7 @@
       <dev-screen />
     </div>
 
+    <dev-contentn />
     <elements-banner class="bg-primary-100"/>
 
     <UPageGrid :ui="{wrapper: 'mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-8'}">
