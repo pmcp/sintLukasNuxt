@@ -3,7 +3,6 @@
 
   <UPopover :popper="{ placement: 'top-end' }">
     <elements-button :style="0">
-
       <div class="inline sm:inline md:hidden lg:hidden xl:hidden 2xl:hidden">SM</div>
       <div class="hidden sm:hidden md:inline lg:hidden xl:hidden 2xl:hidden">MD</div>
       <div class="hidden sm:hidden md:hidden lg:inline xl:hidden 2xl:hidden">LG</div>
@@ -15,7 +14,7 @@
 
       <div class="p-4">
 
-        <UTabs :items="items" class="w-full">
+        <UTabs :items="items" class="w-full w-96 max-w-96">
           <template #item="{ item }">
             <UCard>
               <dev-content v-if="item.key === 'content'" />
