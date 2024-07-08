@@ -16,6 +16,9 @@ export default defineNuxtConfig({
   ui: {
     safelistColors: ['black', 'primary', 'secondary']
   },
+  image: {
+    provider: 'netlify'
+  }
   // content: {
   //   navigation: {
   //     fields: ['title']
