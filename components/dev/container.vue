@@ -1,6 +1,4 @@
 <template>
-
-
   <UPopover :popper="{ placement: 'top-end' }">
     <elements-button :style="0">
       <div class="inline sm:inline md:hidden lg:hidden xl:hidden 2xl:hidden">SM</div>
