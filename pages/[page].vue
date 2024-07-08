@@ -1,8 +1,8 @@
 <template>
   <main>
-
+    HALLO
 <!--    {{ data }}-->
-
+{{ $route.path}}
     <ContentQuery :path="$route.path" find="one" v-slot="{ data }">
       {{ data }}
     </ContentQuery>

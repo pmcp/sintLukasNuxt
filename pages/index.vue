@@ -1,5 +1,5 @@
 <template>
-  <elements-animated-grid />
+
 </template>
 
 <!--<script setup>-->
