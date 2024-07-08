@@ -1,8 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  build: {
-    transpile: ['@egjs/vue-grid']
-  },
+  // build: {
+  //   transpile: ['@egjs/vue-grid']
+  // },
   devtools: { enabled: true },
   extends: ['@nuxt/ui-pro'],
   modules: ['@nuxt/content', '@nuxt/ui', '@nuxt/image', 'nuxt-mapbox'],
