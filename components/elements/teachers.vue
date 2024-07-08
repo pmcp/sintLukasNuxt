@@ -1,8 +1,10 @@
 <template>
   <UPageGrid :ui="{wrapper: 'grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 p-0 pmcp-teacher_container'}">
-  <ContentQuery v-for="t in teachers" :path="`teachers/${t}.nl`" find="one" v-slot="{ data }" >
-    <elements-teacher :data="data" class="pmcp-teacher_element"/>
-  </ContentQuery>
+    <elements-teacher
+        v-for="t in props.teachers"
+        :teacher="t"
+        class="pmcp-teacher_element"
+    />
   </UPageGrid>
 </template>
 

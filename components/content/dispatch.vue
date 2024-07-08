@@ -7,12 +7,14 @@
     </elements-button>
   </div>
 
+
+
   <div v-else-if="props.type === 'person'" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 p-0 pmcp-teacher_container">
-    <ContentQuery v-for="t in props.data.teacher" :path="`teachers/${t}.nl`" find="one" v-slot="{ data }" >
-      <elements-teacher :data="data" class="pmcp-teacher_element"/>
-    </ContentQuery>
-
-
+    <elements-teacher
+        v-for="t in props.data.teacher"
+        :teacher="t"
+        class="pmcp-teacher_element"
+    />
   </div>
 
 </template>
