@@ -25,12 +25,10 @@
         }
       }">
         <template #header>
-          <ContentQuery path="_site/categories" v-slot="{ data }">
-            <h2 class="pt-2 text-2xl font-bold uppercase">
-              <!-- TODO: Lang-->
-              {{ category['nl'] }}
-            </h2>
-          </ContentQuery>
+          <h2 class="pt-2 text-2xl font-bold uppercase">
+            <!-- TODO: Lang-->
+            {{ category['nl'] }}
+          </h2>
         </template>
         <div class="overflow-hidden">
           <div class="relative" v-if="data.mainImage">
