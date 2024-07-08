@@ -12,7 +12,3 @@
 <!--      <elements-courses class="col-span-1"></elements-courses>-->
 <!--    </UPageGrid>-->
 </template>
-
-<script setup>
-const elements = ref()
-</script>
