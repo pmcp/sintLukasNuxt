@@ -1,9 +1,9 @@
 <template>
 
-  <ContentQuery v-for="l in locations" :path="`locations/${l}.nl`" find="one" v-slot="{ data }">
-    <elements-location :location="data"/>
-  </ContentQuery>
-
+  <elements-location
+      v-for="l in locations"
+      :location="l"
+  />
 
 </template>
 <script setup>
@@ -13,4 +13,7 @@ const props = defineProps({
     required: true,
   }
 });
+
+
+
 </script>

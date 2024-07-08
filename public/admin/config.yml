@@ -11,7 +11,7 @@ backend:
 media_folder: /public/assets/uploads
 public_folder: /assets/uploads
 
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 
 slug:
   encoding: "ascii"
