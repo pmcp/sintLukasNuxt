@@ -7,6 +7,9 @@
     </template>
     <template #center >
       <div class="hidden lg:flex grow gap-8">
+        <nuxtLink to="/test-article-2.nl">
+          Test
+        </nuxtLink>
         <UHorizontalNavigation :links="navItems" :ui="{
   wrapper: 'relative w-full flex items-center justify-between',
   container: 'flex items-center min-w-0',
@@ -28,6 +31,7 @@
     </template>
 
     <template #panel>
+
       <UVerticalNavigation :links="navItems" :ui="{
   wrapper: 'relative ',
   base: 'text-center group relative flex items-center gap-1.5 focus:outline-none focus-visible:outline-none dark:focus-visible:outline-none focus-visible:before:ring-inset focus-visible:before:ring-1 focus-visible:before:ring-primary-500 dark:focus-visible:before:ring-primary-400 before:absolute before:inset-px before:rounded-md disabled:cursor-not-allowed disabled:opacity-75',
