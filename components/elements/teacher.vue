@@ -5,7 +5,8 @@
         alt="Avatar"
         size="3xl"
     />
-    {{ data.firstName }} {{ data.lastName }}
+    DATA: {{ teacher }}
+<!--    {{ data.firstName }} {{ data.lastName }}-->
   </UPageCard>
 </template>
 
