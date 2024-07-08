@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="fixed data.value">
+    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="fixing generate pages 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/elements/course.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/course.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/elements/courses.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/courses.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/elements/location.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/location.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/elements/locations.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/locations.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEST_app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/main/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/header.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,34 +38,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/pmcp/Documents/GitHub/sintLukasNuxt/public/admin/components&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/pmcp/Documents/GitHub/sintLukasNuxt/public/admin/components",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/admin/components" />
       <recent name="$PROJECT_DIR$/public/assets/animatedGrid" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/pages" />
+      <recent name="$PROJECT_DIR$/content/pages" />
       <recent name="$PROJECT_DIR$/public/admin/widgets" />
       <recent name="$PROJECT_DIR$/components/elements" />
       <recent name="$PROJECT_DIR$/pages/preview" />
-      <recent name="$PROJECT_DIR$/public/assets/sandbox" />
-      <recent name="$PROJECT_DIR$/public/assets/sandbox/" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -92,7 +89,7 @@
       <workItem from="1720287694396" duration="716000" />
       <workItem from="1720292037627" duration="2969000" />
       <workItem from="1720385917762" duration="6002000" />
-      <workItem from="1720432928579" duration="6258000" />
+      <workItem from="1720432928579" duration="19907000" />
     </task>
     <task id="LOCAL-00001" summary="added name and author to packages.json">
       <created>1716724952483</created>
@@ -304,14 +301,6 @@
       <option name="project" value="LOCAL" />
       <updated>1717863686894</updated>
     </task>
-    <task id="LOCAL-00031" summary="changed the site settings to be ignored by content">
-      <option name="closed" value="true" />
-      <created>1720385642739</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1720385642739</updated>
-    </task>
     <task id="LOCAL-00032" summary="changed the site settings to be ignored by content 2">
       <option name="closed" value="true" />
       <created>1720386218016</created>
@@ -384,7 +373,87 @@
       <option name="project" value="LOCAL" />
       <updated>1720436022714</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="fixed courses and locations async">
+      <option name="closed" value="true" />
+      <created>1720442991384</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1720442991384</updated>
+    </task>
+    <task id="LOCAL-00042" summary="added image netlify cdn (not working locally yet)">
+      <option name="closed" value="true" />
+      <created>1720444806978</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1720444806978</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Asyncing">
+      <option name="closed" value="true" />
+      <created>1720444868715</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1720444868715</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Asyncing all">
+      <option name="closed" value="true" />
+      <created>1720445642331</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1720445642331</updated>
+    </task>
+    <task id="LOCAL-00045" summary="more dev stuff">
+      <option name="closed" value="true" />
+      <created>1720450427190</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1720450427190</updated>
+    </task>
+    <task id="LOCAL-00046" summary="more dev stuff 2">
+      <option name="closed" value="true" />
+      <created>1720450441119</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1720450441122</updated>
+    </task>
+    <task id="LOCAL-00047" summary="fixing team page (by deleting it)">
+      <option name="closed" value="true" />
+      <created>1720451432476</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1720451432476</updated>
+    </task>
+    <task id="LOCAL-00048" summary="fixing generate pages">
+      <option name="closed" value="true" />
+      <created>1720453622247</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1720453622247</updated>
+    </task>
+    <task id="LOCAL-00049" summary="fixing generate pages 2">
+      <option name="closed" value="true" />
+      <created>1720455095201</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1720455095201</updated>
+    </task>
+    <task id="LOCAL-00050" summary="fixing generate pages 3">
+      <option name="closed" value="true" />
+      <created>1720455484777</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1720455484792</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,16 +471,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added accordeon" />
-    <MESSAGE value="design changes + footer" />
-    <MESSAGE value="added moooore" />
-    <MESSAGE value="container queries on teachers" />
-    <MESSAGE value="designing the grid" />
-    <MESSAGE value="designed courses" />
-    <MESSAGE value="page work" />
-    <MESSAGE value="simple bg hack" />
-    <MESSAGE value="first preview" />
-    <MESSAGE value="almost done the widget thing" />
     <MESSAGE value="think i'm done with widgets" />
     <MESSAGE value="added stuff, mainly colors for categories" />
     <MESSAGE value="effect on hover" />
@@ -427,7 +486,17 @@
     <MESSAGE value="removed netlify identity widget" />
     <MESSAGE value="removed unused" />
     <MESSAGE value="fixed data.value" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed data.value" />
+    <MESSAGE value="fixed courses and locations async" />
+    <MESSAGE value="added image netlify cdn (not working locally yet)" />
+    <MESSAGE value="Asyncing" />
+    <MESSAGE value="Asyncing all" />
+    <MESSAGE value="more dev stuff" />
+    <MESSAGE value="more dev stuff 2" />
+    <MESSAGE value="fixing team page (by deleting it)" />
+    <MESSAGE value="fixing generate pages" />
+    <MESSAGE value="fixing generate pages 2" />
+    <MESSAGE value="fixing generate pages 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing generate pages 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
