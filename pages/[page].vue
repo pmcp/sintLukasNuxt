@@ -3,7 +3,7 @@
 
 <!--    {{ data }}-->
 
-    <ContentQuery :path="`${$route.path}`" find="one" v-slot="{ data }">
+    <ContentQuery :path="$route.path" find="one" v-slot="{ data }">
       {{ data }}
     </ContentQuery>
 
