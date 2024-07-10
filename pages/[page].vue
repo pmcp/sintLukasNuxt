@@ -2,9 +2,14 @@
   <main>
     HALLO
 
-{{ $route.path}}
+<!--{{ $route.path}}-->
+<!--    <ContentDoc :path="$route.path" v-slot="{ data }">-->
+<!--      {{ data }}-->
+<!--    </ContentDoc>-->
+
+
     <ContentQuery :path="$route.path" find="one" v-slot="{ data }">
-      {{ data }}
+      <ContentRenderer :value="data" class="prose" />
     </ContentQuery>
 
 
@@ -16,3 +21,5 @@
 <!--    <elements-container class="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl " :elements="data.elements"/>-->
   </main>
 </template>
+<script setup lang="ts">
+</script>
