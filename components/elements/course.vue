@@ -68,7 +68,9 @@ const { data } = await useAsyncData('course', () => queryContent('ateliers')
     .findOne()
     )
 
-const { data: categories } = await useAsyncData('categories', () => queryContent('_site/categories').findOne())
+const { data: categories } = await useAsyncData('categories', () => queryContent('_site/categories')
+    .where({ _partial: true })
+    .findOne())
 category.value = categories.value.ateliers.find(item => item.id === props.course);
 
 

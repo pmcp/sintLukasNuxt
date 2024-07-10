@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="fixing generate pages 10">
+    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="fixing generate pages 11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/[page].vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/[page].vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/elements/course.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/course.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +90,7 @@
       <workItem from="1720385917762" duration="6002000" />
       <workItem from="1720432928579" duration="23421000" />
       <workItem from="1720603496568" duration="1953000" />
-      <workItem from="1720612413349" duration="650000" />
+      <workItem from="1720612413349" duration="881000" />
     </task>
     <task id="LOCAL-00001" summary="added name and author to packages.json">
       <created>1716724952483</created>
@@ -302,14 +302,6 @@
       <option name="project" value="LOCAL" />
       <updated>1717863686894</updated>
     </task>
-    <task id="LOCAL-00041" summary="fixed courses and locations async">
-      <option name="closed" value="true" />
-      <created>1720442991384</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1720442991384</updated>
-    </task>
     <task id="LOCAL-00042" summary="added image netlify cdn (not working locally yet)">
       <option name="closed" value="true" />
       <created>1720444806978</created>
@@ -454,7 +446,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720460538584</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="fixing generate pages 11">
+      <option name="closed" value="true" />
+      <created>1720625017580</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1720625017580</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +472,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed to async" />
     <MESSAGE value="made a nice dev menu" />
     <MESSAGE value="made a nice dev menu 2" />
     <MESSAGE value="changed page to async" />
@@ -497,7 +496,8 @@
     <MESSAGE value="fixing generate pages 8" />
     <MESSAGE value="fixing generate pages 9" />
     <MESSAGE value="fixing generate pages 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing generate pages 10" />
+    <MESSAGE value="fixing generate pages 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing generate pages 11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
