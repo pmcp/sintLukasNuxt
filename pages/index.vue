@@ -6,7 +6,7 @@
 <!--      <p>{{ article.description }}</p>-->
 <!--    </div>-->
 <!--  </ContentList>-->
-  <nuxtLink to="test-article-2.nl">Test</nuxtLink>
+  <nuxtLink to="pages/test-article-2.nl">Test</nuxtLink>
 </template>
 
 <!--<script setup>-->
