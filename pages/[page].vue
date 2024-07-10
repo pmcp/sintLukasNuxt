@@ -2,10 +2,10 @@
   <main>
     HALLO
 
-{{ $route.path}}
+{{ $route.path}} - {{ '/pages'+$route.path }}
 
-    <ContentQuery :path="$route.path" v-slot="{ data }">
-{{ data }}
+    <ContentQuery :path="'/pages'+$route.path" v-slot="{ data }">
+    {{ data }}
 <!--      <h1 class="text-xl font-bold py-8 mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">{{ data.title }}</h1>-->
 <!--      <elements-intro>-->
 <!--        {{ data.intro }}-->
