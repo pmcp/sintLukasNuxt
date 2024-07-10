@@ -55,9 +55,7 @@
 </template>
 
 <script setup>
-const { data } = await useAsyncData('navigation', () => queryContent('_site/navigation')
-    .where({ _partial: true })
-    .findOne())
+const { data } = await useAsyncData('navigation', () => queryContent('site/navigation').findOne())
 // console.log(data.value)
 // TODO: Lang
 const lang = 'nl'

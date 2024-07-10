@@ -4,9 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="fixing generate pages 11">
+    <list default="true" id="65348269-b90e-48bf-801e-88cb2ba2bdef" name="Changes" comment="fixing generate pages 12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/elements/course.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/elements/course.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/main/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/1.ateliers/maarten.fr.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/ateliers/maarten.fr.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/1.ateliers/maarten.nl.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/ateliers/maarten.nl.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/2.locations/map-name-asdf-location-type-point-coordinates-78-046875-27-8390761.fr.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/locations/map-name-asdf-location-type-point-coordinates-78-046875-27-8390761.fr.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/2.locations/map-name-asdf-location-type-point-coordinates-78-046875-27-8390761.nl.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/locations/map-name-asdf-location-type-point-coordinates-78-046875-27-8390761.nl.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/3.teachers/map-firstname-dsfa-lastname-sadf.fr.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/teachers/map-firstname-dsfa-lastname-sadf.fr.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/3.teachers/map-firstname-dsfa-lastname-sadf.nl.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/teachers/map-firstname-dsfa-lastname-sadf.nl.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/3.teachers/map-firstname-laure-lastname-dhoe.fr.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/teachers/map-firstname-laure-lastname-dhoe.fr.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/3.teachers/map-firstname-laure-lastname-dhoe.nl.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/teachers/map-firstname-laure-lastname-dhoe.nl.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_site/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/content/site/categories.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_site/navigation.json" beforeDir="false" afterPath="$PROJECT_DIR$/content/site/navigation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +104,7 @@
       <workItem from="1720385917762" duration="6002000" />
       <workItem from="1720432928579" duration="23421000" />
       <workItem from="1720603496568" duration="1953000" />
-      <workItem from="1720612413349" duration="881000" />
+      <workItem from="1720612413349" duration="3024000" />
     </task>
     <task id="LOCAL-00001" summary="added name and author to packages.json">
       <created>1716724952483</created>
@@ -302,14 +316,6 @@
       <option name="project" value="LOCAL" />
       <updated>1717863686894</updated>
     </task>
-    <task id="LOCAL-00042" summary="added image netlify cdn (not working locally yet)">
-      <option name="closed" value="true" />
-      <created>1720444806978</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1720444806978</updated>
-    </task>
     <task id="LOCAL-00043" summary="Asyncing">
       <option name="closed" value="true" />
       <created>1720444868715</created>
@@ -454,7 +460,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720625017580</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="fixing generate pages 12">
+      <option name="closed" value="true" />
+      <created>1720625254908</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1720625254908</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +486,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="made a nice dev menu" />
     <MESSAGE value="made a nice dev menu 2" />
     <MESSAGE value="changed page to async" />
     <MESSAGE value="removed netlify identity widget" />
@@ -497,7 +510,8 @@
     <MESSAGE value="fixing generate pages 9" />
     <MESSAGE value="fixing generate pages 10" />
     <MESSAGE value="fixing generate pages 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing generate pages 11" />
+    <MESSAGE value="fixing generate pages 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing generate pages 12" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
