@@ -11,7 +11,7 @@ backend:
 media_folder: /public/assets/uploads
 public_folder: /assets/uploads
 
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 
 slug:
   encoding: "ascii"
@@ -45,7 +45,7 @@ collections:
           }
       - label: 'Translations'
         name: 'translations'
-        file: 'content/site/translations.json'
+        file: 'content.translations.json'
         format: 'json'
         editor:
           preview: false

@@ -5,15 +5,19 @@
         alt="Avatar"
         size="3xl"
     />
-    {{ data.firstName }} {{ data.lastName }}
+    DATA: {{ teacher }}
+<!--    {{ data.firstName }} {{ data.lastName }}-->
   </UPageCard>
 </template>
 
 <script setup>
 const props = defineProps({
-  data: {
-    type: Object,
+  teacher: {
+    type: String,
     required: true,
   }
 });
+
+// TODO: lang
+const { data } = await useAsyncData('teacher', () => queryContent(`teachers/${props.teacher}.nl`).findOne())
 </script>

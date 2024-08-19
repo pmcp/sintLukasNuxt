@@ -3,9 +3,9 @@
     <template #header>
       <div class="flex flex-row justify-between items-end">
         <div>
-          <div>{{ location.name }}</div>
-          <div>{{ location.street }}</div>
-          <div>{{ location.zip }} {{ location.city }}</div>
+          <div>{{ data.name }}</div>
+          <div>{{ data.street }}</div>
+          <div>{{ data.zip }} {{ location.city }}</div>
         </div>
         <UButton
             icon="i-heroicons-chevron-down"
@@ -26,14 +26,14 @@
           map-id="location"
           :options="{
         style: 'mapbox://styles/mapbox/light-v11', // style URL
-        center: JSON.parse(location.location).coordinates, // starting position
+        center: JSON.parse(data.location).coordinates, // starting position
         zoom: 14 // starting zoom
       }"
       >
         <MapboxDefaultMarker
             marker-id="locationMarker"
             :options="{}"
-            :lnglat="JSON.parse(location.location).coordinates"
+            :lnglat="JSON.parse(data.location).coordinates"
         >
         </MapboxDefaultMarker>
       </MapboxMap>
@@ -43,7 +43,7 @@
     </div>
 
     <template #footer v-if="show">
-      <elements-markdown class="prose lg:prose-md" v-if="show" :markdownString="location.info" />
+      <elements-markdown class="prose lg:prose-md" v-if="show" :markdownString="data.info" />
     </template>
   </UCard>
 
@@ -53,11 +53,15 @@
 <script setup>
 const props = defineProps({
   location: {
-    type: Object,
+    type: String,
     required: true,
   }
 });
 
+// TODO: lang
+
+console.log(props.location)
+const { data } = await useAsyncData('location', () => queryContent(`locations/${props.location}.nl`).findOne())
 
 const dropdown = ref() // we need a DOM node
 const show = ref(false)
